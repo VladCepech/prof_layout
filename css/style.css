@@ -164,13 +164,11 @@ li {
 .brand {
     width: 100%;
     background-color: #e8e8e8;
-
-
+    display: flex;
 }
 
 .brand__picture {
     height: 614px;
-    border: 1px solid #e8e8e8;
     background: url(../img/Layer_24.jpg);
     background-position: left bottom;
 }
@@ -251,11 +249,12 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-weight: 900;
 }
 
 .hot-black {
     font-size: 18px;
-    font-weight: 400;
+    
     letter-spacing: 0.45px;
 }
 
