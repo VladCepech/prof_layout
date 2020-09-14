@@ -307,7 +307,6 @@ li {
 
 .fetured__gallery-item:hover {
     box-shadow: 0 5px 5px rgb(182, 182, 182);
-    display: ;
 }
 .fetured__gallery-item:hover .add-cart {
     display: initial;
@@ -525,8 +524,6 @@ li {
     display: grid;
     grid-template-columns: 2.3fr 1fr 1fr 1fr;
 }
-
-.bottom__brand {}
 
 .bottom__logo {
     color: #3e3e40;
