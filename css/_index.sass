@@ -1,0 +1,206 @@
+$mainRedColor: #f16d7f
+$mainRedHover: darken($mainRedColor,10%)
+
+.brand
+  width: 100%
+  background-color: #e8e8e8
+  display: flex
+  &__picture
+     height: 614px 
+     background: url(../img/Layer_24_.jpg) no-repeat 
+     background-position: right bottom
+  &__text
+     text-transform: uppercase     
+     font-weight: 900   
+     border-left: 12px solid $mainRedColor
+     padding-left: 12px
+     margin-top: 224px  
+  &__text-big
+     font-size: 60px
+     letter-spacing: 1.5px
+     line-height: 43px  
+  &__text-small
+     font-size: 40px
+     letter-spacing: 1px
+     line-height: 32px
+     margin-top: 18px
+     span
+        color: $mainRedColor
+
+.hot-square
+  width: 560px
+  height: 542px
+  position: relative
+
+.hot-rectangle
+  width: 560px
+  height: 261px
+  position: relative
+
+.formen
+  background: url(../img/Layer_30.jpg)
+
+.accesories
+  background: #dadad2 url(../img/Layer_37.jpg) no-repeat
+  background-position: right top
+
+.women
+  background: url(../img/Layer_32.jpg)
+
+.forkids
+  background: url(../img/Layer_31.jpg)
+
+.hot
+  height: 823px
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: space-between
+  align-content: space-between
+  margin-top: 98px
+  &__label
+    position: absolute
+    top: 26px
+    height: 82px
+    width: fit-content
+    background-color: #ffffff
+    text-transform: uppercase
+    padding-left: 19px
+    padding-right: 19px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    font-weight: 900
+  &-black
+    font-size: 18px
+    letter-spacing: 0.45px
+  &-red
+    color: #f16d7f
+    font-size: 30px
+    letter-spacing: 0.75px
+
+.fetured
+  margin-top: 100px
+  &__gallery
+    height: 780px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__gallery-item
+    height: 366px
+    width: 261px
+    & .pic
+        position: absolute;object-fit: cover
+        object-fit: cover
+    & .add-cart
+        position: absolute
+        z-index: 999
+        display: none
+    &:hover
+        box-shadow: 0 5px 5px rgb(182, 182, 182) 
+    &:hover .add-cart
+        display: initial 
+
+.fetured__name
+  text-align: center
+  & h2
+    margin-top: 0
+    margin-bottom: 10px
+    font-size: 30px
+    font-weight: 700
+    letter-spacing: 0.75px
+  & p
+    margin-top: 0
+    margin-bottom: 60px
+    color: #9f9f9f
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0.35px
+
+.item-name
+  font-size: 13px
+  font-weight: 700
+  text-transform: uppercase
+  margin-left: 14px
+  margin-top: 300px
+
+.item-price
+  color: $mainRedColor
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+  margin-left: 14px
+  margin-top: 10px
+  margin-bottom: 21px
+
+.fetured__button
+  margin-top: -70px
+  min-height: 220px
+  display: flex
+  justify-content: center
+  align-items: center
+  &-browse
+    background-color: $mainRedColor
+    height: 38px
+    color: #ffffff
+    font-size: 15px
+    font-weight: 400
+    line-height: 36px
+    padding-left: 24px
+    padding-right: 19px
+    &:hover
+        background-color: $mainRedHover
+    & i
+        margin-left: 9px
+
+.offer
+  height: 529px
+  margin-bottom: 97px
+  &__doby
+    height: inherit
+    display: flex
+    background-color: #222224
+  &__pic
+    padding-left: 39px
+    height: inherit
+    width: 767px
+    color: #ffffff
+    background: url(../img/Image_offer.jpg) no-repeat
+    &-offer
+        margin-top: 132px
+        font-size: 54px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 1.5px
+        & span
+            color: $mainRedColor
+    &-women
+        font-size: 32px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.9px
+  &__detales
+    height: inherit
+    width: 373px
+    display: flex
+    flex-direction: column
+    &-item
+        display: flex
+        justify-content: space-between
+    &-icon
+        margin-top: 46px
+        margin-left: 30px
+    &-text
+        width: 252px
+        color: #fbfbfb
+        font-size: 14px
+        font-weight: 300
+        line-height: 24px
+        letter-spacing: 0.35px
+        & h3
+            margin-left: 2px
+            margin-top: 55px
+            margin-bottom: 0
+        & p
+            width: 219px
+            margin-top: 0

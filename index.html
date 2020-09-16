@@ -1,311 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Home</title>
-  </head>
 
-  <body>
-    <div class="header container">
-      <div class="header__left">
-        <a href="index.html" class="header__logo"
-          ><img src="img/logo.png" alt="logo" />Bran<span>d</span></a
-        >
-        <form method="GET" class="header__search">
-          <div class="search__browse">
-            Browse<i class="fas fa-caret-down"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="header container">
+    <div class="header__left">
+      <a href="index.html" class="header__logo"><img src="img/logo.png" alt="logo" />Bran<span>d</span></a>
+      <form method="GET" class="header__search">
+        <div class="search__browse">
+          Browse<i class="fas fa-caret-down"></i>
+        </div>
+        <input type="text" name="search" placeholder="Search for Item..." />
+        <button><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+    <div class="header__right">
+      <a href="#" class="header__cart"><img src="img/cart.svg" alt="cart" /></a>
+      <a href="#" class="header__account">My Account<i class="fas fa-caret-down"></i></a>
+    </div>
+  </div>
+
+  <div class="header-line"></div>
+
+  <div class="navbar container">
+    <ul class="navbar__menu-list">
+      <li class="navbar__menu-item" id="active"><a href="#">Home</a></li>
+      <li class="navbar__menu-item"><a href="#">Man</a></li>
+      <li class="navbar__menu-item"><a href="goods/cart.html">Women</a></li>
+      <li class="navbar__menu-item"><a href="#">Kids</a></li>
+      <li class="navbar__menu-item"><a href="#">Accoseriese</a></li>
+      <li class="navbar__menu-item"><a href="#">Featured</a></li>
+      <li class="navbar__menu-item"><a href="#">Hot Deals</a></li>
+    </ul>
+  </div>
+
+  <div class="brand">
+    <div class="brand__picture container">
+      <div class="brand__text">
+        <div class="brand__text-big">The brand</div>
+        <div class="brand__text-small">of luxerious <span>fashion</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hot container">
+    <a href="#">
+      <div class="hot-square formen">
+        <div class="hot__label">
+          <div class="hot-black">Hot deal</div>
+          <div class="hot-red">For Men</div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="hot-rectangle accesories">
+        <div class="hot__label">
+          <div class="hot-black">Luxirous & trendy</div>
+          <div class="hot-red">Accesories</div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="hot-rectangle women">
+        <div class="hot__label">
+          <div class="hot-black">30% offer</div>
+          <div class="hot-red">Women</div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="hot-square forkids">
+        <div class="hot__label">
+          <div class="hot-black">New arrivals</div>
+          <div class="hot-red">For kids</div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="fetured container">
+    <div class="fetured__name">
+      <h2>Fetured Items</h2>
+      <p>Shop for items based on what we featured in this week</p>
+    </div>
+    <div class="fetured__gallery">
+      <a href="#" class="fetured__gallery-item">
+        <img src="img/Layer_2.jpg" alt="goods" class="pic" />
+        <img src="img/Hover.png" alt="hover" class="add-cart" />
+        <div class="item-name">Mango People T-shirt</div>
+        <div class="item-price">$52.00</div>
+      </a>
+      <a href="#" class="fetured__gallery-item">
+        <img src="img/Layer_3.jpg" alt="goods" class="pic" />
+        <img src="img/Hover.png" alt="hover" class="add-cart" />
+        <div class="item-name">Mango People T-shirt</div>
+        <div class="item-price">$52.00</div>
+      </a>
+      <a href="#" class="fetured__gallery-item">
+        <img src="img/Layer_4.jpg" alt="goods" class="pic" />
+        <img src="img/Hover.png" alt="hover" class="add-cart" />
+        <div class="item-name">Mango People T-shirt</div>
+        <div class="item-price">$52.00</div>
+      </a>
+      <a href="#" class="fetured__gallery-item">
+        <img src="img/Layer_5.jpg" alt="goods" class="pic" />
+        <img src="img/Hover.png" alt="hover" class="add-cart" />
+        <div class="item-name">Mango People T-shirt</div>
+        <div class="item-price">$52.00</div>
+      </a>
+      <a href="#" class="fetured__gallery-item">
+        <img src="img/Layer_6.jpg" alt="goods" class="pic" />
+        <img src="img/Hover.png" alt="hover" class="add-cart" />
+        <div class="item-name">Mango People T-shirt</div>
+        <div class="item-price">$52.00</div>
+      </a>
+      <a href="#" class="fetured__gallery-item">
+        <img src="img/Layer_7.jpg" alt="goods" class="pic" />
+        <img src="img/Hover.png" alt="hover" class="add-cart" />
+        <div class="item-name">Mango People T-shirt</div>
+        <div class="item-price">$52.00</div>
+      </a>
+      <a href="#" class="fetured__gallery-item">
+        <img src="img/Layer_8.jpg" alt="goods" class="pic" />
+        <img src="img/Hover.png" alt="hover" class="add-cart" />
+        <div class="item-name">Mango People T-shirt</div>
+        <div class="item-price">$52.00</div>
+      </a>
+      <a href="#" class="fetured__gallery-item">
+        <img src="img/Layer_9.jpg" alt="goods" class="pic" />
+        <img src="img/Hover.png" alt="hover" class="add-cart" />
+        <div class="item-name">Mango People T-shirt</div>
+        <div class="item-price">$52.00</div>
+      </a>
+    </div>
+    <div class="fetured__button">
+      <a href="#" class="fetured__button-browse">Browse All Product<i class="fas fa-long-arrow-alt-right"></i></a>
+    </div>
+  </div>
+
+  <div class="offer">
+    <div class="offer__doby container">
+      <div class="offer__pic">
+        <div class="offer__pic-offer">30% <span>Offer</span></div>
+        <div class="offer__pic-women">For women</div>
+      </div>
+      <div class="offer__detales">
+        <div class="offer__detales-item">
+          <div class="offer__detales-icon">
+            <img src="img/Car.svg" alt="#" />
           </div>
-          <input type="text" name="search" placeholder="Search for Item..." />
-          <button><i class="fas fa-search"></i></button>
+          <div class="offer__detales-text">
+            <h3>Free Delivery</h3>
+            <p>
+              Worldwide delivery on all. Authorit tively morph next-generation
+              innov tion with extensive models.
+            </p>
+          </div>
+        </div>
+        <div class="offer__detales-item">
+          <div class="offer__detales-icon">
+            <img src="img/percent.svg" alt="#" />
+          </div>
+          <div class="offer__detales-text">
+            <h3>Sales & discounts</h3>
+            <p>
+              Worldwide delivery on all. Authorit tively morph next-generation
+              innov tion with extensive models.
+            </p>
+          </div>
+        </div>
+        <div class="offer__detales-item">
+          <div class="offer__detales-icon">
+            <img src="img/crown.svg" alt="#" />
+          </div>
+          <div class="offer__detales-text">
+            <h3>Quality assurance</h3>
+            <p>
+              Worldwide delivery on all. Authorit tively morph next-generation
+              innov tion with extensive models.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subscribe">
+    <div class="subscribe__box container">
+      <div class="subscribe__comment">
+        <img src="img/Layer_40.png" alt="#" />
+        <div class="comment">
+          <p class="text">
+            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+            pulvinar purus condimentum a. Aliquam condimentum mattis neque sed
+            pretium”
+          </p>
+          <p class="name">Bin Burhan</p>
+          <p class="adress">Dhaka, Bd</p>
+          <div class="bottom-line">
+            <div class="line-element grey"></div>
+            <div class="line-element red"></div>
+            <div class="line-element grey"></div>
+          </div>
+        </div>
+      </div>
+      <div class="subscribe__mail">
+        <p class="title">Subscribe</p>
+        <p class="for">FOR OUR NEWLETTER AND PROMOTION</p>
+        <form method="GET" class="mail_subscribe">
+          <input type="email" name="email" placeholder="Enter Your Email" />
+          <a href="#">Subscribe</a>
         </form>
       </div>
-      <div class="header__right">
-        <a href="#" class="header__cart"
-          ><img src="img/cart.svg" alt="cart"
-        /></a>
-        <a href="#" class="header__account"
-          >My Account<i class="fas fa-caret-down"></i
-        ></a>
-      </div>
     </div>
+  </div>
 
-    <div class="header-line"></div>
-
-    <div class="navbar container">
-      <ul class="navbar__menu-list">
-        <li class="navbar__menu-item"><a href="#" class="active">Home</a></li>
-        <li class="navbar__menu-item"><a href="#">Man</a></li>
-        <li class="navbar__menu-item"><a href="#">Women</a></li>
-        <li class="navbar__menu-item"><a href="#">Kids</a></li>
-        <li class="navbar__menu-item"><a href="#">Accoseriese</a></li>
-        <li class="navbar__menu-item"><a href="#">Featured</a></li>
-        <li class="navbar__menu-item"><a href="#">Hot Deals</a></li>
+  <div class="bottom container">
+    <div class="bottom__brand">
+      <div class="bottom__logo">
+        <img src="img/logo.png" alt="logo" />Bran<span>d</span>
+      </div>
+      <p class="bottom-text">
+        Objectively transition extensive data rather than cross functional
+        solutions. Monotonectally syndicate multidisciplinary materials before
+        go forward benefits. Intrinsicly syndicate an expanded array of
+        processes and cross-unit partnerships.
+      </p>
+      <p class="bottom-text">
+        Efficiently plagiarize 24/365 action items and focused infomediaries.
+        Distinctively seize superior initiatives for wireless technologies.
+        Dynamically optimize.
+      </p>
+    </div>
+    <div class="bottom__menu">
+      <p class="bottom-title">COMPANY</p>
+      <ul class="bottom__list">
+        <li class="bottom__item"><a href="#">Home</a></li>
+        <li class="bottom__item"><a href="#">Shop</a></li>
+        <li class="bottom__item"><a href="#">About</a></li>
+        <li class="bottom__item"><a href="#">How It Works</a></li>
+        <li class="bottom__item"><a href="#">Contact</a></li>
       </ul>
     </div>
+    <div class="bottom__menu">
+      <p class="bottom-title">INFORMATION</p>
+      <ul class="bottom__list">
+        <li class="bottom__item"><a href="#">Tearms & Condition</a></li>
+        <li class="bottom__item"><a href="#">Privacy Policy</a></li>
+        <li class="bottom__item"><a href="#">How to Buy</a></li>
+        <li class="bottom__item"><a href="#">How to Sell</a></li>
+        <li class="bottom__item"><a href="#">Promotion</a></li>
+      </ul>
+    </div>
+    <div class="bottom__menu">
+      <p class="bottom-title">SHOP CATEGORY</p>
+      <ul class="bottom__list">
+        <li class="bottom__item"><a href="#">Men</a></li>
+        <li class="bottom__item"><a href="#">Women</a></li>
+        <li class="bottom__item"><a href="#">Child</a></li>
+        <li class="bottom__item"><a href="#">Apparel</a></li>
+        <li class="bottom__item"><a href="#">Brows All</a></li>
+      </ul>
+    </div>
+  </div>
 
-    <div class="brand">
-      <div class="brand__picture container">
-        <div class="brand__text">
-          <div class="brand__text-big">The brand</div>
-          <div class="brand__text-small">of luxerious <span>fashion</span></div>
-        </div>
+  <div class="footer">
+    <div class="footer__body container">
+      <div class="footer__copyright">
+        &copy; 2017 Brand All Rights Reserved.
+      </div>
+      <div class="footer__links">
+        <a href="#">
+          <div class="footer-link"><i class="fab fa-linkedin-in"></i></div>
+        </a>
+        <a href="#">
+          <div class="footer-link"><i class="fab fa-twitter"></i></div>
+        </a>
+        <a href="#">
+          <div class="footer-link"><i class="fab fa-pinterest-p"></i></div>
+        </a>
+        <a href="#">
+          <div class="footer-link"><i class="fab fa-facebook-f"></i></div>
+        </a>
+        <a href="#">
+          <div class="footer-link"><i class="fab fa-google-plus-g"></i></div>
+        </a>
       </div>
     </div>
+  </div>
+</body>
 
-    <div class="hot container">
-      <a href="#">
-        <div class="hot-square formen">
-          <div class="hot__label">
-            <div class="hot-black">Hot deal</div>
-            <div class="hot-red">For Men</div>
-          </div>
-        </div>
-      </a>
-      <a href="#">
-        <div class="hot-rectangle accesories">
-          <div class="hot__label">
-            <div class="hot-black">Luxirous & trendy</div>
-            <div class="hot-red">Accesories</div>
-          </div>
-        </div>
-      </a>
-      <a href="#">
-        <div class="hot-rectangle women">
-          <div class="hot__label">
-            <div class="hot-black">30% offer</div>
-            <div class="hot-red">Women</div>
-          </div>
-        </div>
-      </a>
-      <a href="#">
-        <div class="hot-square forkids">
-          <div class="hot__label">
-            <div class="hot-black">New arrivals</div>
-            <div class="hot-red">For kids</div>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="fetured container">
-      <div class="fetured__name">
-        <h2>Fetured Items</h2>
-        <p>Shop for items based on what we featured in this week</p>
-      </div>
-      <div class="fetured__gallery">
-        <a href="#" class="fetured__gallery-item">
-          <img src="img/Layer_2.jpg" alt="goods" class="pic" />
-          <img src="img/Hover.png" alt="hover" class="add-cart" />
-          <div class="item-name">Mango People T-shirt</div>
-          <div class="item-price">$52.00</div>
-        </a>
-        <a href="#" class="fetured__gallery-item">
-          <img src="img/Layer_3.jpg" alt="goods" class="pic" />
-          <img src="img/Hover.png" alt="hover" class="add-cart" />
-          <div class="item-name">Mango People T-shirt</div>
-          <div class="item-price">$52.00</div>
-        </a>
-        <a href="#" class="fetured__gallery-item">
-          <img src="img/Layer_4.jpg" alt="goods" class="pic" />
-          <img src="img/Hover.png" alt="hover" class="add-cart" />
-          <div class="item-name">Mango People T-shirt</div>
-          <div class="item-price">$52.00</div>
-        </a>
-        <a href="#" class="fetured__gallery-item">
-          <img src="img/Layer_5.jpg" alt="goods" class="pic" />
-          <img src="img/Hover.png" alt="hover" class="add-cart" />
-          <div class="item-name">Mango People T-shirt</div>
-          <div class="item-price">$52.00</div>
-        </a>
-        <a href="#" class="fetured__gallery-item">
-          <img src="img/Layer_6.jpg" alt="goods" class="pic" />
-          <img src="img/Hover.png" alt="hover" class="add-cart" />
-          <div class="item-name">Mango People T-shirt</div>
-          <div class="item-price">$52.00</div>
-        </a>
-        <a href="#" class="fetured__gallery-item">
-          <img src="img/Layer_7.jpg" alt="goods" class="pic" />
-          <img src="img/Hover.png" alt="hover" class="add-cart" />
-          <div class="item-name">Mango People T-shirt</div>
-          <div class="item-price">$52.00</div>
-        </a>
-        <a href="#" class="fetured__gallery-item">
-          <img src="img/Layer_8.jpg" alt="goods" class="pic" />
-          <img src="img/Hover.png" alt="hover" class="add-cart" />
-          <div class="item-name">Mango People T-shirt</div>
-          <div class="item-price">$52.00</div>
-        </a>
-        <a href="#" class="fetured__gallery-item">
-          <img src="img/Layer_9.jpg" alt="goods" class="pic" />
-          <img src="img/Hover.png" alt="hover" class="add-cart" />
-          <div class="item-name">Mango People T-shirt</div>
-          <div class="item-price">$52.00</div>
-        </a>
-      </div>
-      <div class="fetured__button">
-        <a href="#" class="fetured__button-browse"
-          >Browse All Product<i class="fas fa-long-arrow-alt-right"></i
-        ></a>
-      </div>
-    </div>
-
-    <div class="offer">
-      <div class="offer__doby container">
-        <div class="offer__pic">
-          <div class="offer__pic-offer">30% <span>Offer</span></div>
-          <div class="offer__pic-women">For women</div>
-        </div>
-        <div class="offer__detales">
-          <div class="offer__detales-item">
-            <div class="offer__detales-icon">
-              <img src="img/Car.svg" alt="#" />
-            </div>
-            <div class="offer__detales-text">
-              <h3>Free Delivery</h3>
-              <p>
-                Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.
-              </p>
-            </div>
-          </div>
-          <div class="offer__detales-item">
-            <div class="offer__detales-icon">
-              <img src="img/percent.svg" alt="#" />
-            </div>
-            <div class="offer__detales-text">
-              <h3>Sales & discounts</h3>
-              <p>
-                Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.
-              </p>
-            </div>
-          </div>
-          <div class="offer__detales-item">
-            <div class="offer__detales-icon">
-              <img src="img/crown.svg" alt="#" />
-            </div>
-            <div class="offer__detales-text">
-              <h3>Quality assurance</h3>
-              <p>
-                Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="subscribe">
-      <div class="subscribe__box container">
-        <div class="subscribe__comment">
-          <img src="img/Layer_40.png" alt="#" />
-          <div class="comment">
-            <p class="text">
-              “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-              pulvinar purus condimentum a. Aliquam condimentum mattis neque sed
-              pretium”
-            </p>
-            <p class="name">Bin Burhan</p>
-            <p class="adress">Dhaka, Bd</p>
-            <div class="bottom-line">
-              <div class="line-element grey"></div>
-              <div class="line-element red"></div>
-              <div class="line-element grey"></div>
-            </div>
-          </div>
-        </div>
-        <div class="subscribe__mail">
-          <p class="title">Subscribe</p>
-          <p class="for">FOR OUR NEWLETTER AND PROMOTION</p>
-          <form method="GET" class="mail_subscribe">
-            <input type="email" name="email" placeholder="Enter Your Email" />
-            <a href="#">Subscribe</a>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <div class="bottom container">
-      <div class="bottom__brand">
-        <div class="bottom__logo">
-          <img src="img/logo.png" alt="logo" />Bran<span>d</span>
-        </div>
-        <p class="bottom-text">
-          Objectively transition extensive data rather than cross functional
-          solutions. Monotonectally syndicate multidisciplinary materials before
-          go forward benefits. Intrinsicly syndicate an expanded array of
-          processes and cross-unit partnerships.
-        </p>
-        <p class="bottom-text">
-          Efficiently plagiarize 24/365 action items and focused infomediaries.
-          Distinctively seize superior initiatives for wireless technologies.
-          Dynamically optimize.
-        </p>
-      </div>
-      <div class="bottom__menu">
-        <p class="bottom-title">COMPANY</p>
-        <ul class="bottom__list">
-          <li class="bottom__item"><a href="#">Home</a></li>
-          <li class="bottom__item"><a href="#">Shop</a></li>
-          <li class="bottom__item"><a href="#">About</a></li>
-          <li class="bottom__item"><a href="#">How It Works</a></li>
-          <li class="bottom__item"><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="bottom__menu">
-        <p class="bottom-title">INFORMATION</p>
-        <ul class="bottom__list">
-          <li class="bottom__item"><a href="#">Tearms & Condition</a></li>
-          <li class="bottom__item"><a href="#">Privacy Policy</a></li>
-          <li class="bottom__item"><a href="#">How to Buy</a></li>
-          <li class="bottom__item"><a href="#">How to Sell</a></li>
-          <li class="bottom__item"><a href="#">Promotion</a></li>
-        </ul>
-      </div>
-      <div class="bottom__menu">
-        <p class="bottom-title">SHOP CATEGORY</p>
-        <ul class="bottom__list">
-          <li class="bottom__item"><a href="#">Men</a></li>
-          <li class="bottom__item"><a href="#">Women</a></li>
-          <li class="bottom__item"><a href="#">Child</a></li>
-          <li class="bottom__item"><a href="#">Apparel</a></li>
-          <li class="bottom__item"><a href="#">Brows All</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="footer__body container">
-        <div class="footer__copyright">
-          &copy; 2017 Brand All Rights Reserved.
-        </div>
-        <div class="footer__links">
-          <a href="#"
-            ><div class="footer-link"><i class="fab fa-linkedin-in"></i></div
-          ></a>
-          <a href="#"
-            ><div class="footer-link"><i class="fab fa-twitter"></i></div
-          ></a>
-          <a href="#"
-            ><div class="footer-link"><i class="fab fa-pinterest-p"></i></div
-          ></a>
-          <a href="#"
-            ><div class="footer-link"><i class="fab fa-facebook-f"></i></div
-          ></a>
-          <a href="#"
-            ><div class="footer-link"><i class="fab fa-google-plus-g"></i></div
-          ></a>
-        </div>
-      </div>
-    </div>
-  </body>
 </html>
