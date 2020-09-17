@@ -120,9 +120,38 @@
         </div>
 
         <div class="cart__checkout">
-            <div class="shipping"></div>
-            <div class="coupon"></div>
-            <div class="total"></div>
+            <div class="shipping">
+                <span>Shipping Adress</span>
+                <form action="">
+                    <select name="" id="">
+                        <option value="">Bangladesh</option>
+                        <option value="">India</option>
+                        <option value="">Russia</option>
+                        <option value="">USA</option>
+                        <option value="">Japan</option>
+                    </select>
+                    <input id="state" type="text" placeholder="State">
+                    <input id="zip" type="text" placeholder="Postcode / Zip">
+                </form>
+            </div>
+            <div class="coupon">
+                <span>coupon discount</span>
+                <span class="coupon-enter">Enter your coupon code if you have one</span>
+                <form action="">
+                    <input type="text" placeholder="State">
+                    <button type="submit">Apply coupon</button>
+                </form>
+            </div>
+            <div class="total">
+                <div class="sub">
+                    <span>Sub total</span><span class="sum">$900</span>
+                </div>
+                <div class="grand">
+                    <span>Grand Total</span><span class="sum">$900</span>
+                </div>
+                <div class="line"></div>
+                <a href="#">proceed to checkout</a>
+            </div>
         </div>
 
         <div class="cart__quote">
