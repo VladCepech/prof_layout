@@ -1,5 +1,4 @@
-$mainRedColor: #f16d7f
-$mainRedHover: darken($mainRedColor,10%)
+@import "_variables.sass"
 
 .subscribe
   min-height: 438px
@@ -186,8 +185,7 @@ $mainRedHover: darken($mainRedColor,10%)
     background-color: $mainRedColor
     color: #f7f7f8
   &:active
-    background-color: #eeeeee
-    color: #f7f7f8  
+    @extend %activeButtonColor  
 
 
  

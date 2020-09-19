@@ -1,5 +1,4 @@
-$mainRedColor: #f16d7f
-$mainRedHover: darken($mainRedColor,10%)
+@import "_variables.sass"
 
 .brand
   width: 100%
@@ -97,7 +96,7 @@ $mainRedHover: darken($mainRedColor,10%)
         z-index: 999
         display: none
     &:hover
-        box-shadow: 0 5px 5px rgb(182, 182, 182) 
+        @extend %hoverShadow 
     &:hover .add-cart
         display: initial 
 

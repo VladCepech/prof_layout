@@ -1,5 +1,4 @@
-$mainRedColor: #f16d7f
-$mainRedHover: darken($mainRedColor,10%)
+@import "_variables.sass"
 
 .newarriv
     height: 148px
@@ -113,6 +112,11 @@ $mainRedHover: darken($mainRedColor,10%)
         width: 235px
         height: 50px
         border: 1px solid #eaeaea 
+        &:hover
+            @extend %hoverButtonColor
+        &:active
+            @extend %activeButtonColor 
+        
 
 .cart__checkout
     display: flex
@@ -191,6 +195,10 @@ $mainRedHover: darken($mainRedColor,10%)
                 color: #4a4a4a
                 background-color: #ffffff
                 border: 1px solid #eaeaea
+                &:hover
+                    @extend %hoverButtonColor
+                &:active
+                    @extend %activeButtonColor 
     & .total
         padding-left: 44px
         padding-right: 43px
@@ -235,7 +243,7 @@ $mainRedHover: darken($mainRedColor,10%)
 .cart__quote
     margin-top: 23px
     font-size: 11px
-    line-height: 3.4
+    line-height: 2.4
     text-align: center
     font-weight: 700
     text-transform: uppercase
@@ -243,5 +251,9 @@ $mainRedHover: darken($mainRedColor,10%)
     width: 100px
     height: 35px
     border: 1px solid #eaeaea 
-
+    background-color: #fff
+    &:hover
+        @extend %hoverButtonColor
+    &:active
+        @extend %activeButtonColor 
         

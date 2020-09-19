@@ -1,0 +1,192 @@
+@import "_variables.sass"
+
+.goods-picture
+    position: relative
+    z-index: 1
+    height: 777px
+    display: flex
+    justify-content: center
+    background-color: #f7f7f7
+    &__box
+        width: 1600px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border: 1px solid #eaeaea
+    &__image
+        object-fit: cover
+    &__arrow
+        width: 47px
+        height: 47px
+        background-color: rgba(42,42,42,0.14)
+        font-size: 24px
+        line-height: 24px
+        font-weight: 300
+        color: #ffffff
+        display: flex
+        justify-content: center
+        align-items: center
+        &:hover
+            @extend %hoverButtonColor
+        &:active
+            @extend %activeButtonColor
+
+.goods-description
+    position: relative
+    z-index: 2
+    margin-top: -70px
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 1141px
+    height: 730px
+    background-color: #ffffff
+    border: 1px solid #eaeaea
+    & h3
+        font-size: 14px
+        margin-top: 73px
+        font-weight: 700
+        color: $mainRedColor
+    & h2
+        font-size: 18px
+        line-height: 24px
+        font-weight: 900
+        text-transform: uppercase
+        color: #4d4d4d
+    &__article
+        margin-top: 42px
+        margin-bottom: 18px
+        text-align: center
+        width: 620px
+        font-size: 14px
+        line-height: 24px
+        font-weight: 300
+        color: #5e5e5e
+        &-note
+            width: 336px
+            display: flex
+            justify-content: space-between
+            font-size: 14px
+            line-height: 24px
+            font-weight: 700
+            color: #b9b9b9
+            text-transform: uppercase
+            & span
+                color: #2f2f2f
+    &__price
+        margin-top: 34px
+        margin-bottom: 40px
+        font-size: 24px
+        line-height: 24px
+        font-weight: 700
+        color: #ef5b70
+        &-line
+            width: 642px
+            border-bottom: 1px solid #eaeaea
+    &__choose
+        padding-top: 63px
+        width: 537px
+        display: flex
+        justify-content: space-between
+        &-feature
+            width: 144px
+            & .input-name
+                font-size: 14px
+                text-transform: uppercase
+                font-weight: 700
+                color: #2f2f2f
+            & input
+                font-size: 13px
+                line-height: 24px
+                font-weight: 400
+                color: #bcbcbc
+        &-input
+            margin-top: 16px
+            width: 129px
+            height: 35px
+            border: 1px solid #eaeaea
+            padding-left: 15px
+            font-size: 13px
+            font-weight: 400
+            color: #bcbcbc
+            & #red
+                color: red
+            & #yellow
+                color: yellow
+            & #green
+                color: green
+            & #black
+                color: black
+    &__main-button
+        width: 537px
+        height: 55px
+        margin-top: 28px
+        background-color: #ffffff
+        border: 1px solid #ef5b70
+        font-size: 16px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 700
+        color: #ef5b70
+        &:hover
+            @extend %hoverButtonColor
+        &:hover img
+            filter: brightness(3)
+        &:active
+            @extend %activeButtonColor
+            border: none
+            
+        & img
+            margin-right: 15px
+    &__line
+        width: 147px
+        display: flex
+        align-items: center
+        & .line-black
+            width: 42px
+            border-bottom: 1px solid #eaeaea
+        & .line-red
+            width: 63px
+            border-bottom: 3px solid #ef5b70
+
+.like-olso
+    height: 540px
+    & h1
+        margin-top: 119px
+        margin-bottom: 72px
+        font-size: 24px
+        font-weight: 900
+        text-transform: uppercase
+        color: #4d4d4d
+        text-align: center
+    &__gallery
+        display: flex
+        justify-content: space-between
+        &-item
+            width: 263px
+            height: 364px
+            &:hover
+                @extend %hoverShadow
+            &-picture
+                height: 280px
+                display: flex
+                justify-content: center
+                align-items: flex-end
+                background-color: #e9e9e9
+                & img
+                    object-fit: cover
+            &-name
+                margin-left: 14px
+                margin-top: 18px
+                font-size: 14px
+                font-weight: 400
+                text-transform: uppercase
+                color: #6f6e6e
+            &-price
+                margin-left: 14px
+                margin-top: 17px
+                font-size: 16px
+                font-weight: 700
+                text-transform: uppercase
+                color: $mainRedColor
