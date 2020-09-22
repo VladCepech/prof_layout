@@ -948,6 +948,7 @@ li {
 }
 
 .cart__checkout .coupon form button {
+  cursor: pointer;
   margin-top: 25px;
   padding-left: 10px;
   width: 118px;
@@ -1025,9 +1026,10 @@ li {
 }
 
 .cart__quote {
+  cursor: pointer;
   margin-top: 23px;
   font-size: 11px;
-  line-height: 2.4;
+  line-height: 1.2;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
