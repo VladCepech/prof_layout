@@ -1,0 +1,271 @@
+@import "_variables.sass"
+
+.newarriv
+    height: 148px
+    background-color: #f8f3f4
+    & div
+        height: inherit
+        display: flex
+        justify-content: space-between
+        align-items: center
+        
+.newarriv__main
+    font-size: 24px
+    font-weight: 900
+    text-transform: uppercase
+    color: $mainRedColor
+
+.newarriv__nav
+    font-size: 14px
+    line-height: 20px
+    font-weight: 300
+    text-transform: uppercase
+    color: #636363
+    & #active
+        font-weight: 700
+        color: $mainRedColor
+    & a:hover
+        color: $mainRedColor
+
+.cart
+    height: 1123px
+    font-weight: 400
+    & .details
+        width: 440px
+    & .price
+        width: 140px
+        text-align: center
+    & .quantity
+        width: 80px
+        text-align: center
+    & .shipping
+        width: 80px
+        text-align: center
+    & .subtotal
+        width: 80px
+        text-align: center
+    & .action
+        width: 50px
+        text-align: center
+
+.cart__top
+    font-size: 13px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: -0.015em
+    height: 100px
+    
+.cart-table
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    padding-bottom: 20px
+    border-bottom: 1px solid #eaeaea
+    & i
+        font-size: 16px
+        color: #c0c0c0
+.cart__item
+    align-items: center
+    padding-top: 20px
+    height: 115px
+    font-size: 13px
+    color: #656565
+    & .details
+        display: flex
+        & .details-text
+            margin-left: 21px
+            line-height: 20px
+            font-weight: 400
+            color: #575757
+            & .name
+                margin-top: 10px
+                color: #222222
+                line-height: 1.2
+                text-transform: uppercase
+            & .color
+                margin-top: 30px
+            & span
+                font-weight: 300
+                color: #6f6e6e
+    & .quantity
+        display: flex
+        justify-content: center
+        & .box
+            height: 30px
+            width: 40px
+            text-align: center
+            padding-left: 15px
+            border: 1px solid #eaeaea
+    &-del
+        border-radius: 50%
+        cursor: pointer 
+        padding: 0
+        &:hover i
+            color: $mainRedColor
+        &:active i
+            @extend %activeButtonColor 
+
+
+.cart__buttons
+    height: 156px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-size: 14px
+    line-height: 3.4
+    text-align: center
+    font-weight: 700
+    text-transform: uppercase
+    color: #4a4a4a
+    & a
+        width: 235px
+        height: 50px
+        border: 1px solid #eaeaea 
+        &:hover
+            @extend %hoverButtonColor
+        &:active
+            @extend %activeButtonColor 
+        
+
+.cart__checkout
+    display: flex
+    justify-content: space-between
+
+.cart__checkout
+    display: flex
+    & .shipping
+        width: 355px
+        display: flex
+        flex-direction: column
+        align-items: start
+        & span
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+        & form
+            display: flex
+            flex-direction: column
+            width: inherit
+            &::placeholder
+                font-size: 13px
+                line-height: 1.2
+                font-weight: 300
+                color: #b1b1b1
+            & select
+                padding-left: 18px
+                margin-top: 22px
+                height: 45px
+                color: #b1b1b1
+                border: 1px solid #eaeaea
+            & input
+                padding-left: 18px
+                border: 1px solid #eaeaea
+                margin-top: 20px
+                height: 45px
+    & .coupon
+        width: 355px
+        display: flex
+        flex-direction: column
+        align-items: start
+        & span
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+        & .coupon-enter
+            font-size: 14px
+            line-height: 1.2
+            font-weight: 300
+            color: #000000
+            text-transform: initial
+            margin-top: 26px
+        & form
+            display: flex
+            flex-direction: column
+            width: inherit
+            &::placeholder
+                font-size: 13px
+                line-height: 1.2
+                font-weight: 300
+                color: #b1b1b1
+            & input
+                border: 1px solid #eaeaea
+                margin-top: 20px
+                height: 45px
+                padding-left: 18px
+            & button
+                cursor: pointer
+                margin-top: 25px
+                padding-left: 10px
+                width: 118px
+                height: 35px
+                font-size: 11px;
+                line-height: 1.2
+                font-weight: 700
+                text-transform: uppercase
+                color: #4a4a4a
+                background-color: #ffffff
+                border: 1px solid #eaeaea
+                &:hover
+                    @extend %hoverButtonColor
+                &:active
+                    @extend %activeButtonColor 
+    & .total
+        padding-left: 44px
+        padding-right: 43px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        width: 273px
+        height: 214px
+        background-color: #f5f3f3
+        text-transform: uppercase
+        & .sum
+            margin-left: 18px
+        & .sub
+            margin-top: 40px
+            font-size: 11px
+            line-height: 1.2
+            color: #4a4a4a
+        & .grand
+            margin-top: 14px
+            font-size: 16px
+            font-weight: 700
+            & .sum
+                color: $mainRedColor
+        & .line
+            width: inherit
+            border-bottom: 1px solid #e2e2e2
+            margin-top: 22px
+            margin-bottom: 17px
+        & a
+            width: 273px
+            height: 50px
+            background-color: $mainRedColor
+            font-size: 16px
+            line-height: 3
+            font-weight: 700
+            text-transform: uppercase
+            color: #ffffff
+            text-align: center
+            &:hover
+                background-color: $mainRedHover
+
+.cart__quote
+    cursor: pointer
+    margin-top: 23px
+    font-size: 11px
+    line-height: 1.2
+    text-align: center
+    font-weight: 700
+    text-transform: uppercase
+    color: #4a4a4a
+    width: 100px
+    height: 35px
+    border: 1px solid #eaeaea 
+    background-color: #fff
+    &:hover
+        @extend %hoverButtonColor
+    &:active
+        @extend %activeButtonColor 
+        

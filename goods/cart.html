@@ -33,7 +33,7 @@
     <div class="navbar container">
         <ul class="navbar__menu-list">
             <li class="navbar__menu-item"><a href="../index.html" class="active">Home</a></li>
-            <li class="navbar__menu-item"><a href="#">Man</a></li>
+            <li class="navbar__menu-item"><a href="checkout.html">Man</a></li>
             <li class="navbar__menu-item" id="active"><a href="single_page.html">Women</a></li>
             <li class="navbar__menu-item"><a href="#">Kids</a></li>
             <li class="navbar__menu-item"><a href="#">Accoseriese</a></li>
@@ -73,11 +73,15 @@
             </div>
             <div class="price">$150</div>
             <div class="quantity">
-                <div class="box">2</div>
+                <input class="box" type="number" value="2">
             </div>
             <div class="shipping">FREE</div>
             <div class="subtotal">$300</div>
-            <div class="action"><i class="fas fa-times-circle"></i></div>
+            <div class="action">
+                <button class="cart__item-del">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+            </div>
         </div>
         <div class="cart__item cart-table">
             <div class="details">
@@ -90,11 +94,15 @@
             </div>
             <div class="price">$150</div>
             <div class="quantity">
-                <div class="box">2</div>
+                <input class="box" type="number" value="2">
             </div>
             <div class="shipping">FREE</div>
             <div class="subtotal">$300</div>
-            <div class="action"><i class="fas fa-times-circle"></i></div>
+            <div class="action">
+                <button class="cart__item-del">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+            </div>
         </div>
         <div class="cart__item cart-table">
             <div class="details">
@@ -107,11 +115,15 @@
             </div>
             <div class="price">$150</div>
             <div class="quantity">
-                <div class="box">2</div>
+                <input class="box" type="number" value="2">
             </div>
             <div class="shipping">FREE</div>
             <div class="subtotal">$300</div>
-            <div class="action"><i class="fas fa-times-circle"></i></div>
+            <div class="action">
+                <button class="cart__item-del">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+            </div>
         </div>
 
         <div class="cart__buttons">
@@ -193,9 +205,9 @@
 
     <div class="bottom container">
         <div class="bottom__brand">
-            <div class="bottom__logo">
-                <img src="../img/logo.png" alt="logo" />Bran<span>d</span>
-            </div>
+            <a class="header__logo" href="../index.html">
+                <img src="../img/logo.png" alt="logo">Bran<span>d</span>
+            </a>
             <p class="bottom-text">
                 Objectively transition extensive data rather than cross functional
                 solutions. Monotonectally syndicate multidisciplinary materials before
