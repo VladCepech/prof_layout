@@ -393,7 +393,6 @@ li {
 }
 
 .fetured__gallery {
-  height: 780px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,6 +406,7 @@ li {
 .fetured__gallery-item {
   height: 366px;
   width: 261px;
+  margin-bottom: 22px;
 }
 
 .fetured__gallery-item .pic {
