@@ -24,6 +24,8 @@
     & #active
         font-weight: 700
         color: $mainRedColor
+    & a
+        transition: .2s
     & a:hover
         color: $mainRedColor
 
@@ -101,8 +103,11 @@
         border-radius: 50%
         cursor: pointer 
         padding: 0
+        & i
+            transition: .2s
         &:hover i
             color: $mainRedColor
+            background-color: #fff
         &:active i
             @extend %activeButtonColor 
 
@@ -122,6 +127,7 @@
         width: 235px
         height: 50px
         border: 1px solid #eaeaea 
+        transition: .2s
         &:hover
             @extend %hoverButtonColor
         &:active
@@ -206,6 +212,7 @@
                 color: #4a4a4a
                 background-color: #ffffff
                 border: 1px solid #eaeaea
+                transition: .2s
                 &:hover
                     @extend %hoverButtonColor
                 &:active
@@ -248,8 +255,10 @@
             text-transform: uppercase
             color: #ffffff
             text-align: center
+            transition: .2s
             &:hover
                 background-color: $mainRedHover
+                color: #fff
 
 .cart__quote
     cursor: pointer
@@ -264,6 +273,7 @@
     height: 35px
     border: 1px solid #eaeaea 
     background-color: #fff
+    transition: .2s
     &:hover
         @extend %hoverButtonColor
     &:active

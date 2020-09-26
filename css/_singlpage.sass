@@ -26,6 +26,7 @@
         display: flex
         justify-content: center
         align-items: center
+        transition: .2s
         &:hover
             @extend %hoverButtonColor
         &:active
@@ -96,19 +97,30 @@
                 font-weight: 700
                 color: #2f2f2f
             & input
+                padding: 0
+                padding-left: 30px
                 font-size: 13px
-                line-height: 24px
                 font-weight: 400
-                color: #bcbcbc
+                color: #2f2f2f
+                width: 112px
         &-input
             margin-top: 16px
-            width: 129px
+            width: 144px
             height: 35px
             border: 1px solid #eaeaea
-            padding-left: 15px
-            font-size: 13px
+            padding-left: 30px
             font-weight: 400
-            color: #bcbcbc
+        &-color
+            position: relative
+            &::before
+                content: ''
+                width: 12px
+                height: 12px
+                // font-family: "Font Awesome 5 Brands"
+                background-color: $mainRedColor
+                position: absolute
+                bottom: 12px
+                left: 12px
             & #red
                 color: red
             & #yellow
@@ -129,6 +141,7 @@
         align-items: center
         font-weight: 700
         color: #ef5b70
+        transition: .2s
         &:hover
             @extend %hoverButtonColor
         &:hover img
@@ -166,6 +179,7 @@
         &-item
             width: 263px
             height: 364px
+            transition: .2s
             &:hover
                 @extend %hoverShadow
             &-picture

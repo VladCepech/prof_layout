@@ -5,10 +5,9 @@
   background: rgba(242, 242, 242, 1)
   background: url(../img/Layer_410.jpg) no-repeat center rgba(242, 242, 242, 0.5)
   background-blend-mode: overlay
-
-.subscribe__box
-  display: flex
-  height: inherit
+  &__box
+    display: flex
+    height: inherit
 
 .subscribe__comment
   min-height: 438px
@@ -98,6 +97,7 @@
     padding-right: 20px
     padding-left: 21px
     background-color: $mainRedColor
+    transition: .2s
     &:hover
         background-color: $mainRedHover
 
@@ -106,15 +106,13 @@
   margin-top: 120px
   display: grid
   grid-template-columns: 2.3fr 1fr 1fr 1fr
-
-
-.bottom-text
-  width: 427px
-  color: #898989
-  font-size: 14px
-  font-weight: 300
-  line-height: 24px
-  letter-spacing: 0.35px
+  &-text
+    width: 427px
+    color: #898989
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    letter-spacing: 0.35px
 
 .bottom__menu
   display: flex
@@ -134,44 +132,43 @@
             font-size: 16px
             font-weight: 400
             letter-spacing: 0.4px
+            transition: .2s
             &:hover
                 color: #f16d7f
 
 .footer
   min-height: 79px
   background-color: #e6e6e6
-
-.footer__body
-  display: flex
-  justify-content: space-between
-  align-items: center
-  min-height: 79px
-
-.footer__copyright
-  color: #7a7a7a
-  font-size: 16px
-  font-weight: 400
-  letter-spacing: 0.4px
-
-.footer__links
-  display: flex
-  flex-direction: row
-
-.footer-link
-  width: 32px
-  height: 32px
-  background-color: #ffffff
-  font-size: 16px
-  font-weight: 400
-  text-align: center
-  color: #b2b2b2
-  line-height: 34px
-  margin-left: 8px
-  &:hover
-    background-color: $mainRedColor
-    color: #f7f7f8
-  &:active
-    @extend %activeButtonColor  
+  &__body
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 79px
+  &__copyright
+    color: #7a7a7a
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.4px
+  &__links
+    display: flex
+    flex-direction: row
+  &-link
+    width: 32px
+    height: 32px
+    background-color: #ffffff
+    font-size: 16px
+    font-weight: 400
+    text-align: center
+    color: #b2b2b2
+    line-height: 34px
+    margin-left: 8px
+    transition: .2s
+    &:hover
+      background-color: $mainRedColor
+      color: #f7f7f8
+      transform: scale(1.1)
+    &:active
+      @extend %activeButtonColor  
 
 
  
