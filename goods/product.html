@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="header container">
+        <div class="header__left">
+            <a href="../index.html" class="header__logo"><img src="../img/logo.png" alt="logo" />Bran<span>d</span></a>
+            <form method="GET" class="header__search">
+                <div class="search__browse">
+                    Browse<i class="fas fa-caret-down"></i>
+                </div>
+                <input type="text" name="search" placeholder="Search for Item..." />
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="header__right">
+            <a href="cart.html" class="header__cart"><img src="../img/cart.svg" alt="cart" /></a>
+            <a href="#" class="header__account">My Account<i class="fas fa-caret-down"></i></a>
+        </div>
+    </div>
+
+    <div class="header-line"></div>
+
+    <div class="navbar container">
+        <ul class="navbar__menu-list">
+            <li class="navbar__menu-item"><a href="../index.html" class="active">Home</a></li>
+            <li class="navbar__menu-item"><a href="checkout.html">Man</a></li>
+            <li class="navbar__menu-item"><a href="single_page.html">Women</a></li>
+            <li class="navbar__menu-item"><a href="#">Kids</a></li>
+            <li class="navbar__menu-item" id="active"><a href="#">Accoseriese</a></li>
+            <li class="navbar__menu-item"><a href="#">Featured</a></li>
+            <li class="navbar__menu-item"><a href="#">Hot Deals</a></li>
+        </ul>
+    </div>
+
+    <div class="newarriv">
+        <div class="container">
+            <div class="newarriv__main">New Arrivals</div>
+            <div class="newarriv__nav">
+                <a href="../index.html">Home /</a>
+                <a href="#">&ensp;Men /</a>
+                <a href="#" id="active">&ensp;New Arrivals</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product container">
+        <div class="sidebar">
+            <div class="sidebar__item">
+                <label for="switch1">
+                    <div class="sidebar__title">Category</div>
+                </label>
+                <input class="sidebar__switch" type="checkbox" id="switch1" />
+                <i class="fas fa-caret-up"></i>
+                <ul class="sidebar__menu-item">
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Bags</a></li>
+                    <li><a href="">Denim</a></li>
+                    <li><a href="">Hoodies & Sweatshirts</a></li>
+                    <li><a href="">Jackets & Coats</a></li>
+                    <li><a href="">Pants</a></li>
+                    <li><a href="">Polos</a></li>
+                    <li><a href="">Shirts</a></li>
+                    <li><a href="">Shoes</a></li>
+                    <li><a href="">Shorts</a></li>
+                    <li><a href="">Sweaters & Knits</a></li>
+                    <li><a href="">T-Shirts</a></li>
+                    <li><a href="">Tanks</a></li>
+                </ul>
+            </div>
+            <div class="sidebar__item">
+                <label for="switch2">
+                    <div class="sidebar__title">BRAND</div>
+                </label>
+                <input class="sidebar__switch" type="checkbox" checked id="switch2" />
+                <i class="fas fa-caret-up"></i>
+                <ul class="sidebar__menu-item">
+                    <li><a href="">Baon</a></li>
+                    <li><a href="">Boss</a></li>
+                    <li><a href="">Levi's</a></li>
+                    <li><a href="">Tom Tailor</a></li>
+                    <li><a href="">Tommy Hilfiger</a></li>
+                    <li><a href="">Wrangler</a></li>
+                    <li><a href="">Springfield</a></li>
+                    <li><a href="">Emporio Armani</a></li>
+                    <li><a href="">Calvin Klein</a></li>
+                </ul>
+            </div>
+            <div class="sidebar__item">
+                <label for="switch3">
+                    <div class="sidebar__title">dESIGNER</div>
+                </label>
+                <input class="sidebar__switch" type="checkbox" checked id="switch3" />
+                <i class="fas fa-caret-up"></i>
+                <ul class="sidebar__menu-item">
+                    <li><a href="">Name 1</a></li>
+                    <li><a href="">Name 2</a></li>
+                    <li><a href="">Name 3</a></li>
+                    <li><a href="">Name 4</a></li>
+                    <li><a href="">Name 5</a></li>
+                    <li><a href="">Name 6</a></li>
+                    <li><a href="">Name 7</a></li>
+                    <li><a href="">Name 8</a></li>
+                    <li><a href="">Name 9</a></li>
+                    <li><a href="">Name 10</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="product__box">
+            <div class="choose__bar">
+                <div class="choose__trendind">
+                    <div class="choose__bar-title">Trending now</div>
+                    <div class="choose__trendind-line">
+                        <a href="#">Bohemian</a>
+                        <a href="#">Floral</a>
+                        <a href="#">Lace</a>
+                    </div>
+                    <div class="choose__trendind-line">
+                        <a href="#">Floral</a>
+                        <a href="#">Lace</a>
+                        <a href="#">Bohemian</a>
+                    </div>
+                </div>
+                <div class="choose__size">
+                    <div class="choose__bar-title">Size</div>
+                    <form action="" class="choose__size-form">
+                        <div class="choose__size-item">
+                            <input id="xxs" type="checkbox">
+                            <label for="xxs">XXS</label>
+                        </div>
+                        <div class="choose__size-item">
+                            <input id="xs" type="checkbox">
+                            <label for="xs">XS</label>
+                        </div>
+                        <div class="choose__size-item">
+                            <input id="s" type="checkbox">
+                            <label for="s">S</label>
+                        </div>
+                        <div class="choose__size-item">
+                            <input id="M" type="checkbox">
+                            <label for="M">M</label>
+                        </div>
+                        <div class="choose__size-item">
+                            <input id="L" type="checkbox">
+                            <label for="L">L</label>
+                        </div>
+                        <div class="choose__size-item">
+                            <input id="XL" type="checkbox">
+                            <label for="XL">XL</label>
+                        </div>
+                        <div class="choose__size-item">
+                            <input id="XXL" type="checkbox">
+                            <label for="XXL">XXL</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="choose__price">
+                    <div class="choose__bar-title">Price</div>
+                    <div class="price__bar">
+                        <div class="filter__range">
+                            <div class="filter__range-scale">
+                                <div class="filter__range-bar"></div>
+                            </div>
+                            <button class="filter__range-handle bar__min"></button>
+                            <button class="filter__range-handle bar__max"></button>
+                        </div>
+                    
+
+                    <div class="filter__range-value">
+                        <label>$<input type="text" name="min-interval" value="52"></label>
+                        <label>$<input type="text" name="max-interval" value="400"></label>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sort__bar">
+                <div class="sort__box">
+                    <div class="sort__box-title">Sort By</div>
+                    <select name="" id="">
+                        <option selected value="">Name</option>
+                        <option value="">Brand</option>
+                        <option value="">Price</option>
+                    </select>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="sort__box">
+                    <div class="sort__box-title">Show</div>
+                    <select name="" id="">
+                        <option value="">03</option>
+                        <option selected value="">09</option>
+                        <option value="">18</option>
+                    </select>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="show__box">
+                <div class="product__gallery">
+                    <a href="#" class="product__gallery-item">
+                        <div class="product__gallery-picture"><img src="../img/p01.png" alt=""></div>
+                        <div class="product__gallery-name">Mango People T-shirt</div>
+                        <div class="product__gallery-price">$52.00</div>
+                    </a>
+                    <a href="#" class="product__gallery-item">
+                        <div class="product__gallery-picture"><img src="../img/p02.png" alt=""></div>
+                        <div class="product__gallery-name">Mango  People  T-shirt</div>
+                        <div class="product__gallery-price">$52.00</div>
+                    </a>
+                    <a href="#" class="product__gallery-item">
+                        <div class="product__gallery-picture"><img src="../img/p03.png" alt=""></div>
+                        <div class="product__gallery-name">Mango  People  T-shirt</div>
+                        <div class="product__gallery-price">$52.00</div>
+                    </a>
+                    <a href="#" class="product__gallery-item">
+                        <div class="product__gallery-picture"><img src="../img/p04.png" alt=""></div>
+                        <div class="product__gallery-name">Mango  People  T-shirt</div>
+                        <div class="product__gallery-price">$52.00</div>
+                    </a>
+                    <a href="#" class="product__gallery-item">
+                        <div class="product__gallery-picture"><img src="../img/p05.png" alt=""></div>
+                        <div class="product__gallery-name">Mango  People  T-shirt</div>
+                        <div class="product__gallery-price">$52.00</div>
+                    </a>
+                    <a href="#" class="product__gallery-item">
+                        <div class="product__gallery-picture"><img src="../img/p06.png" alt=""></div>
+                        <div class="product__gallery-name">Mango  People  T-shirt</div>
+                        <div class="product__gallery-price">$52.00</div>
+                    </a>
+                    <a href="#" class="product__gallery-item">
+                        <div class="product__gallery-picture"><img src="../img/p07.png" alt=""></div>
+                        <div class="product__gallery-name">Mango  People  T-shirt</div>
+                        <div class="product__gallery-price">$52.00</div>
+                    </a>
+                    <a href="#" class="product__gallery-item">
+                        <div class="product__gallery-picture"><img src="../img/p08.png" alt=""></div>
+                        <div class="product__gallery-name">Mango  People  T-shirt</div>
+                        <div class="product__gallery-price">$52.00</div>
+                    </a>
+                    <a href="#" class="product__gallery-item">
+                        <div class="product__gallery-picture"><img src="../img/p09.png" alt=""></div>
+                        <div class="product__gallery-name">Mango  People  T-shirt</div>
+                        <div class="product__gallery-price">$52.00</div>
+                    </a>
+                </div>
+            </div>
+            <div class="viewtype__bar">
+                <div class="viewtype__page">
+                    <a href="#"><i class="fas fa-angle-left"></i></a>
+                    <a href="#" class="red">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <span>6.....20</span>
+                    <a class="red" href=""><i class="fas fa-angle-right"></i></a>
+                </div>
+                <button class="viewtype__button">View All</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="info__box">
+        <div class="information container">
+            <a href="#" class="information__item">
+                <div class="information__item-img"><img src="../img/Car.svg" alt=""></div>
+                <div class="information__item-title">Free Delivery</div>
+                <div class="information__item-text">Worldwide delivery on all. Authorit tively morph next-generation
+                    innov tion with extensive models.</div>
+            </a><a href="#" class="information__item">
+                <div class="information__item-img"><img src="../img/percent.svg" alt=""></div>
+                <div class="information__item-title">Sales & discounts</div>
+                <div class="information__item-text">Worldwide delivery on all. Authorit tively morph next-generation
+                    innov tion with extensive models.</div>
+            </a><a href="#" class="information__item">
+                <div class="information__item-img"><img src="../img/crown.svg" alt=""></div>
+                <div class="information__item-title">Quality assurance</div>
+                <div class="information__item-text">Worldwide delivery on all. Authorit tively morph next-generation
+                    innov tion with extensive models.</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <div class="subscribe__box container">
+            <div class="subscribe__comment">
+                <img src="../img/Layer_40.png" alt="#" />
+                <div class="comment">
+                    <p class="text">
+                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                        pulvinar purus condimentum a. Aliquam condimentum mattis neque sed
+                        pretium”
+                    </p>
+                    <p class="name">Bin Burhan</p>
+                    <p class="adress">Dhaka, Bd</p>
+                    <div class="bottom-line">
+                        <div class="line-element grey"></div>
+                        <div class="line-element red"></div>
+                        <div class="line-element grey"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe__mail">
+                <p class="title">Subscribe</p>
+                <p class="for">FOR OUR NEWLETTER AND PROMOTION</p>
+                <form method="GET" class="mail_subscribe">
+                    <input type="email" name="email" placeholder="Enter Your Email" />
+                    <a href="#">Subscribe</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom container">
+        <div class="bottom__brand">
+            <div class="bottom__logo">
+                <img src="../img/logo.png" alt="logo" />Bran<span>d</span>
+            </div>
+            <p class="bottom-text">
+                Objectively transition extensive data rather than cross functional
+                solutions. Monotonectally syndicate multidisciplinary materials before
+                go forward benefits. Intrinsicly syndicate an expanded array of
+                processes and cross-unit partnerships.
+            </p>
+            <p class="bottom-text">
+                Efficiently plagiarize 24/365 action items and focused infomediaries.
+                Distinctively seize superior initiatives for wireless technologies.
+                Dynamically optimize.
+            </p>
+        </div>
+        <div class="bottom__menu">
+            <p class="bottom-title">COMPANY</p>
+            <ul class="bottom__list">
+                <li class="bottom__item"><a href="#">Home</a></li>
+                <li class="bottom__item"><a href="#">Shop</a></li>
+                <li class="bottom__item"><a href="#">About</a></li>
+                <li class="bottom__item"><a href="#">How It Works</a></li>
+                <li class="bottom__item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="bottom__menu">
+            <p class="bottom-title">INFORMATION</p>
+            <ul class="bottom__list">
+                <li class="bottom__item"><a href="#">Tearms & Condition</a></li>
+                <li class="bottom__item"><a href="#">Privacy Policy</a></li>
+                <li class="bottom__item"><a href="#">How to Buy</a></li>
+                <li class="bottom__item"><a href="#">How to Sell</a></li>
+                <li class="bottom__item"><a href="#">Promotion</a></li>
+            </ul>
+        </div>
+        <div class="bottom__menu">
+            <p class="bottom-title">SHOP CATEGORY</p>
+            <ul class="bottom__list">
+                <li class="bottom__item"><a href="#">Men</a></li>
+                <li class="bottom__item"><a href="#">Women</a></li>
+                <li class="bottom__item"><a href="#">Child</a></li>
+                <li class="bottom__item"><a href="#">Apparel</a></li>
+                <li class="bottom__item"><a href="#">Brows All</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__body container">
+            <div class="footer__copyright">
+                &copy; 2017 Brand All Rights Reserved.
+            </div>
+            <div class="footer__links">
+                <a href="#">
+                    <div class="footer-link"><i class="fab fa-linkedin-in"></i></div>
+                </a>
+                <a href="#">
+                    <div class="footer-link"><i class="fab fa-twitter"></i></div>
+                </a>
+                <a href="#">
+                    <div class="footer-link"><i class="fab fa-pinterest-p"></i></div>
+                </a>
+                <a href="#">
+                    <div class="footer-link"><i class="fab fa-facebook-f"></i></div>
+                </a>
+                <a href="#">
+                    <div class="footer-link"><i class="fab fa-google-plus-g"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
