@@ -1431,7 +1431,6 @@ li {
 
 .goods-picture {
   position: relative;
-  z-index: 1;
   height: 777px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2485,5 +2484,113 @@ li {
 .footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active {
   background-color: #eeeeee;
   color: #f7f7f8;
+}
+
+.browse__menu {
+  position: relative;
+  width: 254px;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+}
+
+.browse__menu-chapter {
+  padding: 14px;
+  margin: 0;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.browse__menu-chapter-title {
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.browse__menu-item {
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 5px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.browse__menu-item:hover {
+  margin-left: 15px;
+}
+
+.browse__menu-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.browse__menu-switch {
+  position: absolute;
+  z-index: 4;
+  left: -999px;
+  visibility: hidden;
+}
+
+.browse__menu-switch:checked + div {
+  max-height: 0;
+  z-index: -1;
+}
+
+.browse__menu-switch:checked + div > div::after div::after {
+  opacity: 0;
+}
+
+.browse__menu::after {
+  content: '';
+  position: absolute;
+  left: 44px;
+  top: -14px;
+  border: 7px solid transparent;
+  border-bottom: 7px solid white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.browse__menu::before {
+  content: '';
+  position: absolute;
+  left: 43px;
+  top: -17px;
+  border: 8px solid transparent;
+  border-bottom: 8px solid #e6e6e6;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.browse__menu-wrapper {
+  z-index: 1;
+  padding-top: 8px;
+  position: absolute;
+  overflow: hidden;
+  top: 61px;
+  max-height: 550px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.search__browse {
+  position: relative;
+  width: 63px;
+}
+
+.search__browse i {
+  position: absolute;
+  right: 8px;
+  top: 11px;
+  color: #838383;
+}
+
+.search__browse span {
+  display: block;
+  height: inherit;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

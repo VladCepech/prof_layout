@@ -1,0 +1,78 @@
+@import "_variables.sass"
+
+.browse__menu
+    position: relative
+    width: 254px
+    border-radius: 3px
+    border: 1px solid #e6e6e6
+    background-color: #ffffff
+    &-chapter
+        padding: 14px
+        margin: 0
+        color: #222222
+        font-size: 14px
+        font-weight: 700
+        &-title
+            border-bottom: 1px solid #e6e6e6
+            margin: 0
+            margin-bottom: 10px
+            padding-bottom: 5px
+            text-transform: uppercase
+    &-item
+        text-decoration: none
+        list-style-type: none
+        margin-left: 5px
+        cursor: pointer
+        transition: .3s
+        &:hover
+            margin-left: 15px
+    &-item:not(:last-child)
+        margin-bottom: 12px
+    &-switch
+        position: absolute
+        z-index: 4
+        left: -999px
+        visibility: hidden
+        &:checked + div
+            max-height: 0
+            z-index: -1
+            // padding: 0
+        &:checked + div > div::after div::after
+            opacity: 0
+    &::after
+        content: ''
+        position: absolute
+        left: 44px 
+        top: -14px
+        border: 7px solid transparent
+        border-bottom: 7px solid white
+        transition: .2s
+    &::before
+        content: ''
+        position: absolute
+        left: 43px 
+        top: -17px
+        border: 8px solid transparent
+        border-bottom: 8px solid #e6e6e6
+        transition: 2s
+    &-wrapper
+        z-index: 1
+        padding-top: 8px
+        position: absolute
+        overflow: hidden
+        top: 61px
+        max-height: 550px
+        transition: .3s
+
+.search__browse
+    position: relative
+    width: 63px
+    & i
+        position: absolute
+        right: 8px
+        top: 11px
+        color: #838383
+    & span
+        display: block
+        height: inherit
+        cursor: pointer
