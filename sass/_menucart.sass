@@ -4,7 +4,8 @@
 .cart__switcher
     position: absolute
     z-index: 10
-    right: -999px
+    top: -999px
+    right: 10px
     visibility: hidden
     &:checked + div
         top: -500px
@@ -12,15 +13,13 @@
     background-color: #fff
     position: absolute
     z-index: 4
-    right: 140px
+    right: 244px
     top: 88px
     width: 230px
     padding: 0 15px 15px
     border-radius: 3px
     border: 1px solid #e6e6e6
     transition: .5s
-    &-wrapper
-        position: relative
     &-item
         display: flex
         padding-bottom: 15px
@@ -88,19 +87,15 @@
             background-color: #e6e6e6
         &:active
             @extend %activeButtonColor
-    &::after
-        content: ''
-        position: absolute
-        left: 31px 
-        top: -14px
-        border: 7px solid transparent
-        border-bottom: 7px solid white
-        transition: .2s
     &::before
         content: ''
         position: absolute
-        left: 30px 
-        top: -17px
-        border: 8px solid transparent
-        border-bottom: 8px solid #e6e6e6
-        transition: 2s
+        top: -6px
+        left: 39px
+        height: 10px
+        width: 10px
+        transform: rotate(45deg)
+        background-color: #fff 
+        border-left: 1px solid #e6e6e6        
+        border-top: 1px solid #e6e6e6 
+
