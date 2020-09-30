@@ -2792,12 +2792,13 @@ li {
 .mega__switcher {
   position: absolute;
   z-index: 10;
-  right: -999px;
+  top: -999px;
+  right: 25px;
   visibility: hidden;
 }
 
 .mega__switcher:checked + div {
-  right: -1200px;
+  top: -440px;
   opacity: 0;
 }
 
