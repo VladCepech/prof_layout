@@ -2,6 +2,7 @@
 
 .browse__menu
     position: relative
+    z-index: 5
     width: 254px
     border-radius: 3px
     border: 1px solid #e6e6e6
@@ -9,7 +10,7 @@
     &-chapter
         padding: 14px
         margin: 0
-        color: #222222
+        color: $mainFontColor
         font-size: 14px
         font-weight: 700
         &-title
@@ -26,16 +27,17 @@
         transition: .3s
         &:hover
             margin-left: 15px
+            color: $mainRedColor
     &-item:not(:last-child)
         margin-bottom: 12px
     &-switch
         position: absolute
-        z-index: 4
+        z-index: 10
         left: -999px
         visibility: hidden
         &:checked + div
             max-height: 0
-            z-index: -1
+            z-index: 4
             // padding: 0
         &:checked + div > div::after div::after
             opacity: 0
@@ -56,7 +58,7 @@
         border-bottom: 8px solid #e6e6e6
         transition: 2s
     &-wrapper
-        z-index: 1
+        // z-index: 2
         padding-top: 8px
         position: absolute
         overflow: hidden
@@ -66,6 +68,7 @@
 
 .search__browse
     position: relative
+    z-index: 5
     width: 63px
     & i
         position: absolute

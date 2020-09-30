@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
-.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover {
+.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
   -webkit-box-shadow: 0 5px 5px #d6d6d6;
           box-shadow: 0 5px 5px #d6d6d6;
 }
 
-.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover {
+.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover, .cart__menu-checkout:hover {
   background-color: #f16d7f;
   color: #ffffff;
 }
 
-.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active {
+.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active, .cart__menu-checkout:active, .cart__menu-go:active {
   background-color: #eeeeee;
   color: #f7f7f8;
 }
@@ -51,17 +51,17 @@ li {
   margin: 0 auto;
 }
 
-.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover {
+.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
   -webkit-box-shadow: 0 5px 5px #d6d6d6;
           box-shadow: 0 5px 5px #d6d6d6;
 }
 
-.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover {
+.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover, .cart__menu-checkout:hover {
   background-color: #f16d7f;
   color: #ffffff;
 }
 
-.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active {
+.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active, .cart__menu-checkout:active, .cart__menu-go:active {
   background-color: #eeeeee;
   color: #f7f7f8;
 }
@@ -187,6 +187,7 @@ li {
 .header__cart {
   margin-right: 26px;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .header__cart img {
@@ -225,6 +226,11 @@ li {
 }
 
 .navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: #ffffff7a;
   min-height: 51px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -268,17 +274,17 @@ li {
   color: #f16d7f;
 }
 
-.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover {
+.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
   -webkit-box-shadow: 0 5px 5px #d6d6d6;
           box-shadow: 0 5px 5px #d6d6d6;
 }
 
-.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover {
+.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover, .cart__menu-checkout:hover {
   background-color: #f16d7f;
   color: #ffffff;
 }
 
-.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active {
+.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active, .cart__menu-checkout:active, .cart__menu-go:active {
   background-color: #eeeeee;
   color: #f7f7f8;
 }
@@ -596,22 +602,22 @@ li {
   margin-bottom: 0;
 }
 
-.offer__detales-text p {
+.offer__detales-text h3 p {
   width: 219px;
   margin-top: 0;
 }
 
-.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover {
+.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
   -webkit-box-shadow: 0 5px 5px #d6d6d6;
           box-shadow: 0 5px 5px #d6d6d6;
 }
 
-.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover {
+.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover, .cart__menu-checkout:hover {
   background-color: #f16d7f;
   color: #ffffff;
 }
 
-.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active {
+.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active, .cart__menu-checkout:active, .cart__menu-go:active {
   background-color: #eeeeee;
   color: #f7f7f8;
 }
@@ -717,6 +723,10 @@ li {
 
 .sidebar__menu-item li:hover {
   padding-left: 14px;
+}
+
+.sidebar__menu-item li:hover a {
+  color: #f16d7f;
 }
 
 .choose__bar {
@@ -1095,17 +1105,17 @@ li {
   color: #fbfbfb;
 }
 
-.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover {
+.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
   -webkit-box-shadow: 0 5px 5px #d6d6d6;
           box-shadow: 0 5px 5px #d6d6d6;
 }
 
-.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover {
+.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover, .cart__menu-checkout:hover {
   background-color: #f16d7f;
   color: #ffffff;
 }
 
-.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active {
+.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active, .cart__menu-checkout:active, .cart__menu-go:active {
   background-color: #eeeeee;
   color: #f7f7f8;
 }
@@ -1399,32 +1409,32 @@ li {
           transform: scale(1.1);
 }
 
-.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover {
+.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
   -webkit-box-shadow: 0 5px 5px #d6d6d6;
           box-shadow: 0 5px 5px #d6d6d6;
 }
 
-.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover {
+.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover, .cart__menu-checkout:hover {
   background-color: #f16d7f;
   color: #ffffff;
 }
 
-.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active {
+.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active, .cart__menu-checkout:active, .cart__menu-go:active {
   background-color: #eeeeee;
   color: #f7f7f8;
 }
 
-.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover {
+.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
   -webkit-box-shadow: 0 5px 5px #d6d6d6;
           box-shadow: 0 5px 5px #d6d6d6;
 }
 
-.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover {
+.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover, .cart__menu-checkout:hover {
   background-color: #f16d7f;
   color: #ffffff;
 }
 
-.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active {
+.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active, .cart__menu-checkout:active, .cart__menu-go:active {
   background-color: #eeeeee;
   color: #f7f7f8;
 }
@@ -1752,17 +1762,17 @@ li {
   color: #f16d7f;
 }
 
-.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover {
+.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
   -webkit-box-shadow: 0 5px 5px #d6d6d6;
           box-shadow: 0 5px 5px #d6d6d6;
 }
 
-.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover {
+.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover, .cart__menu-checkout:hover {
   background-color: #f16d7f;
   color: #ffffff;
 }
 
-.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active {
+.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active, .cart__menu-checkout:active, .cart__menu-go:active {
   background-color: #eeeeee;
   color: #f7f7f8;
 }
@@ -2239,17 +2249,17 @@ li {
   transition: .2s;
 }
 
-.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover {
+.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
   -webkit-box-shadow: 0 5px 5px #d6d6d6;
           box-shadow: 0 5px 5px #d6d6d6;
 }
 
-.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover {
+.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover, .cart__menu-checkout:hover {
   background-color: #f16d7f;
   color: #ffffff;
 }
 
-.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active {
+.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active, .cart__menu-checkout:active, .cart__menu-go:active {
   background-color: #eeeeee;
   color: #f7f7f8;
 }
@@ -2471,23 +2481,24 @@ li {
   opacity: 0;
 }
 
-.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover {
+.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
   -webkit-box-shadow: 0 5px 5px #d6d6d6;
           box-shadow: 0 5px 5px #d6d6d6;
 }
 
-.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover {
+.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover, .cart__menu-checkout:hover {
   background-color: #f16d7f;
   color: #ffffff;
 }
 
-.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active {
+.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active, .cart__menu-checkout:active, .cart__menu-go:active {
   background-color: #eeeeee;
   color: #f7f7f8;
 }
 
 .browse__menu {
   position: relative;
+  z-index: 5;
   width: 254px;
   border-radius: 3px;
   border: 1px solid #e6e6e6;
@@ -2521,6 +2532,7 @@ li {
 
 .browse__menu-item:hover {
   margin-left: 15px;
+  color: #f16d7f;
 }
 
 .browse__menu-item:not(:last-child) {
@@ -2529,14 +2541,14 @@ li {
 
 .browse__menu-switch {
   position: absolute;
-  z-index: 4;
+  z-index: 10;
   left: -999px;
   visibility: hidden;
 }
 
 .browse__menu-switch:checked + div {
   max-height: 0;
-  z-index: -1;
+  z-index: 4;
 }
 
 .browse__menu-switch:checked + div > div::after div::after {
@@ -2566,7 +2578,6 @@ li {
 }
 
 .browse__menu-wrapper {
-  z-index: 1;
   padding-top: 8px;
   position: absolute;
   overflow: hidden;
@@ -2578,6 +2589,7 @@ li {
 
 .search__browse {
   position: relative;
+  z-index: 5;
   width: 63px;
 }
 
@@ -2593,4 +2605,356 @@ li {
   height: inherit;
   cursor: pointer;
 }
-/*# sourceMappingURL=style.css.map */
+
+.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
+  -webkit-box-shadow: 0 5px 5px #d6d6d6;
+          box-shadow: 0 5px 5px #d6d6d6;
+}
+
+.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover, .cart__menu-checkout:hover {
+  background-color: #f16d7f;
+  color: #ffffff;
+}
+
+.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active, .cart__menu-checkout:active, .cart__menu-go:active {
+  background-color: #eeeeee;
+  color: #f7f7f8;
+}
+
+.cart__switcher {
+  position: absolute;
+  z-index: 10;
+  right: -999px;
+  visibility: hidden;
+}
+
+.cart__switcher:checked + div {
+  top: -500px;
+}
+
+.cart__menu {
+  background-color: #fff;
+  position: absolute;
+  z-index: 4;
+  right: 140px;
+  top: 88px;
+  width: 230px;
+  padding: 0 15px 15px;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.cart__menu-wrapper {
+  position: relative;
+}
+
+.cart__menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.cart__menu-item-name {
+  padding: 10px 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.cart__menu-item-good {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cart__menu-item-stars {
+  font-size: 10px;
+  color: goldenrod;
+  margin-top: 8px;
+}
+
+.cart__menu-item-quantity {
+  font-size: 10px;
+  font-weight: 700;
+  color: #f16d7f;
+  margin-top: 8px;
+}
+
+.cart__menu-item-cancel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.cart__menu-summ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.cart__menu-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cart__menu-checkout {
+  margin-top: 10px;
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.cart__menu-checkout:active {
+  border: 1px solid #e6e6e6;
+}
+
+.cart__menu-go {
+  margin-top: 10px;
+  border: 1px solid #e6e6e6;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cart__menu-go:hover {
+  background-color: #e6e6e6;
+}
+
+.cart__menu::after {
+  content: '';
+  position: absolute;
+  left: 31px;
+  top: -14px;
+  border: 7px solid transparent;
+  border-bottom: 7px solid white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.cart__menu::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: -17px;
+  border: 8px solid transparent;
+  border-bottom: 8px solid #e6e6e6;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
+  -webkit-box-shadow: 0 5px 5px #d6d6d6;
+          box-shadow: 0 5px 5px #d6d6d6;
+}
+
+.viewtype__button:hover, .goods-picture__arrow:hover, .goods-description__main-button:hover, .cart__buttons a:hover, .cart__checkout .coupon form button:hover, .cart__quote:hover, .collapse__block-form button:hover, .cart__menu-checkout:hover {
+  background-color: #f16d7f;
+  color: #ffffff;
+}
+
+.footer-link:active, .goods-picture__arrow:active, .goods-description__main-button:active, .cart__item-del:active i, .cart__buttons a:active, .cart__checkout .coupon form button:active, .cart__quote:active, .collapse__block-form button:active, .cart__menu-checkout:active, .cart__menu-go:active {
+  background-color: #eeeeee;
+  color: #f7f7f8;
+}
+
+.mega__switcher {
+  position: absolute;
+  z-index: 10;
+  right: -999px;
+  visibility: hidden;
+}
+
+.mega__switcher:checked + div {
+  right: -1200px;
+  opacity: 0;
+}
+
+.mega__menu {
+  position: absolute;
+  top: 40px;
+  right: -230px;
+  opacity: 1;
+  z-index: 5;
+  -webkit-transition: .8s;
+  transition: .8s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 18px 18px 0 18px;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  -webkit-column-count: 3;
+          column-count: 3;
+}
+
+.mega__menu-wrapper {
+  position: relative;
+}
+
+.mega__menu-chapter {
+  margin: 0;
+  padding: 0 0 18px 0;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-column-break-inside: avoid;
+}
+
+.mega__menu-chapter-title {
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.mega__menu-item {
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 5px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.mega__menu-item:hover {
+  margin-left: 15px;
+  color: #f16d7f;
+}
+
+.mega__menu-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.mega__menu-switch {
+  position: absolute;
+  z-index: 10;
+  left: -999px;
+  visibility: hidden;
+}
+
+.mega__menu-switch:checked + div {
+  max-height: 0;
+  z-index: 4;
+}
+
+.mega__menu-switch:checked + div > div::after div::after {
+  opacity: 0;
+}
+
+.mega__menu::after {
+  content: '';
+  position: absolute;
+  left: 44px;
+  top: -14px;
+  border: 7px solid transparent;
+  border-bottom: 7px solid white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.mega__menu::before {
+  content: '';
+  position: absolute;
+  left: 43px;
+  top: -17px;
+  border: 8px solid transparent;
+  border-bottom: 8px solid #e6e6e6;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.mega__menu-sale {
+  position: relative;
+}
+
+.mega__menu-sale img {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.mega__menu-sale a:hover img {
+  opacity: 0.9;
+}
+
+.mega__menu-sale a:hover + div {
+  color: #f16d7f;
+}
+
+.mega__menu-sale-text {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.mega__menu-label {
+  display: inline-block;
+  width: inherit;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.mega__menu-label:hover {
+  color: #f16d7f;
+}
