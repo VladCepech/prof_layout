@@ -47,7 +47,7 @@ li {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -302,6 +302,7 @@ li {
 }
 
 .brand__picture {
+  width: inherit;
   height: 614px;
   background: url(../img/Layer_24_.jpg) no-repeat;
   background-position: right bottom;
@@ -2937,4 +2938,91 @@ li {
 
 .mega__menu-label:hover {
   color: #f16d7f;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding: 10px 10px;
+  }
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__search {
+    margin: 20px 0;
+    height: 52px;
+  }
+  .header__search input {
+    padding-right: 150px;
+    padding-left: 24px;
+  }
+  .header__search input::-webkit-input-placeholder {
+    font-size: 22px;
+  }
+  .header__search input:-ms-input-placeholder {
+    font-size: 22px;
+  }
+  .header__search input::-ms-input-placeholder {
+    font-size: 22px;
+  }
+  .header__search input::placeholder {
+    font-size: 22px;
+  }
+  .header__search button {
+    padding: 0 14px;
+    font-size: 20px;
+  }
+  .search__browse {
+    font-size: 22px;
+    line-height: 44px;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__left {
+    width: 100%;
+  }
+  .header__search {
+    width: inherit;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__search input {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .header__search {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__search input {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 10px;
+  }
 }
