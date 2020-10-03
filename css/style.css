@@ -527,7 +527,7 @@ li {
 
 .fetured__button-browse {
   background-color: #f16d7f;
-  height: 38px;
+  min-height: 38px;
   color: #ffffff;
   font-size: 15px;
   font-weight: 400;
@@ -2976,6 +2976,14 @@ li {
   .hot a {
     margin-top: 20px;
   }
+  .fetured {
+    margin-top: 20px;
+  }
+  .fetured__gallery {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -3030,6 +3038,14 @@ li {
   }
   .navbar__menu-item:not(:last-child) {
     margin-right: 22px;
+  }
+  .fetured__name p {
+    margin-bottom: 40px;
+  }
+  .fetured__button-browse {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
   }
 }
 
