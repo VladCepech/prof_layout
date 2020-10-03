@@ -95,13 +95,29 @@
   border-bottom: 1px solid #ececec
 
 .navbar
-  position: sticky
-  top: 0
+  // position: sticky
+  // top: 0
+  position: relative
   z-index: 3
   background-color: #ffffff7a
   min-height: 51px
   display: flex
   justify-content: center
+  .mobile__menu-open
+    position: absolute
+    font-size: 40px
+    color: $mainRedColor
+    display: none
+  .mobile__menu-close
+    position: absolute
+    font-size: 40px
+    color: $mainRedColor
+    display: none
+
+#mobile__menu-switch
+  display: none
+  left: -999px
+  visibility: hidden
 
 .navbar__menu-list
   display: flex

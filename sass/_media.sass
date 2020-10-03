@@ -1,6 +1,8 @@
 @media screen and ( max-width: 1199px )
     .container
         padding: 0 10px
+    .mega__menu-wrapper
+        display: none
 
 @media screen and ( max-width: 991px )
     .container
@@ -26,6 +28,9 @@
         line-height: 44px
         padding-left: 20px
         padding-right: 40px
+    .navbar__menu-item
+        &:not(:last-child)
+            margin-right: 22px
 
 @media screen and ( max-width: 767px )
     .header__left
@@ -37,6 +42,32 @@
             width: 100%
             padding-right: 0
             padding-left: 20px
+    .navbar
+        position: relative
+        .mobile__menu-open
+            display: flex
+            left: 10px
+            top: -52px
+        .mobile__menu-close
+            // display: none
+            display: flex
+            right: 10px
+            top: -56px
+        &__menu-list
+            flex-direction: column
+            align-items: center
+            max-height: 400px
+            overflow: hidden
+            transition: .3s
+        &__menu-item
+            margin-right: 0!important
+        input:checked ~ ul
+            max-height: 0
+        // input:checked + label
+        //     display: none
+        // input:checked ~ label[.mobile__menu-close] 
+        //     display: flex
+    
 @media screen and ( max-width: 575px )
     .header__search
         justify-content: space-between
