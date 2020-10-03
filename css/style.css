@@ -2969,9 +2969,10 @@ li {
 
 @media screen and (max-width: 991px) {
   .container {
-    padding: 10px 10px;
+    padding: 0 10px;
   }
   .header {
+    padding-top: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -3036,22 +3037,26 @@ li {
     padding-right: 0;
     padding-left: 20px;
   }
+  .header-line {
+    padding-bottom: 20px;
+  }
   .navbar {
     position: relative;
+    min-height: 0;
   }
   .navbar .mobile__menu-open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     left: 10px;
-    top: -52px;
+    top: -65px;
   }
   .navbar .mobile__menu-close {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     right: 10px;
-    top: -56px;
+    top: -66px;
   }
   .navbar__menu-list {
     -webkit-box-orient: vertical;
@@ -3071,6 +3076,9 @@ li {
   }
   .navbar input:checked ~ ul {
     max-height: 0;
+  }
+  .brand__text {
+    margin-top: 300px;
   }
 }
 
