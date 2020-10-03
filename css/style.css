@@ -351,18 +351,6 @@ li {
   color: #f16d7f;
 }
 
-.hot-square {
-  width: 560px;
-  height: 542px;
-  position: relative;
-}
-
-.hot-rectangle {
-  width: 560px;
-  height: 261px;
-  position: relative;
-}
-
 .formen {
   background: url(../img/Layer_30.jpg);
 }
@@ -399,6 +387,12 @@ li {
   margin-top: 98px;
 }
 
+.hot-square {
+  width: 560px;
+  height: 542px;
+  position: relative;
+}
+
 .hot__label {
   position: absolute;
   top: 26px;
@@ -432,6 +426,12 @@ li {
   color: #f16d7f;
   font-size: 30px;
   letter-spacing: 0.75px;
+}
+
+.hot-rectangle {
+  width: 560px;
+  height: 261px;
+  position: relative;
 }
 
 .fetured {
@@ -2965,6 +2965,17 @@ li {
   .mega__menu-wrapper {
     display: none;
   }
+  .hot {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 0;
+  }
+  .hot a {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -3092,5 +3103,8 @@ li {
     width: 100%;
     padding-right: 0;
     padding-left: 10px;
+  }
+  .hot {
+    display: none;
   }
 }
