@@ -1813,7 +1813,7 @@ li {
 }
 
 .newarriv {
-  height: 148px;
+  min-height: 148px;
   background-color: #f8f3f4;
 }
 
@@ -3112,6 +3112,12 @@ li {
   .bottom__menu .bottom__list {
     text-align: center;
   }
+  .newarriv {
+    min-height: 80px;
+  }
+  .form__login {
+    padding-right: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -3188,6 +3194,30 @@ li {
   .offer__detales-text h3 {
     font-size: 25px;
   }
+  .collapse__block-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #collapse-switcher1:checked ~ div {
+    height: 800px;
+  }
+  #collapse-switcher2:checked ~ div {
+    height: 800px;
+  }
+  #collapse-switcher3:checked ~ div {
+    height: 800px;
+  }
+  #collapse-switcher4:checked ~ div {
+    height: 800px;
+  }
+  #collapse-switcher5:checked ~ div {
+    height: 800px;
+  }
+  #collapse-switcher6:checked ~ div {
+    height: 800px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -3257,5 +3287,23 @@ li {
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 4;
+  }
+  .form__login {
+    padding-right: 0;
+  }
+  .form__login button {
+    margin-right: 10px;
+  }
+  .newarriv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .collapse__block-form .form__unit input {
+    width: 300px;
   }
 }

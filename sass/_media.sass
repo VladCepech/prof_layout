@@ -81,7 +81,10 @@
             justify-content: center
         &__menu .bottom__list
             text-align: center
-    
+    .newarriv
+        min-height: 80px
+    .form__login
+        padding-right: 20px
 
 @media screen and ( max-width: 767px )
     .header__left
@@ -129,7 +132,21 @@
             margin: 0 auto
             &-text h3
                 font-size: 25px
-
+    .collapse__block
+        &-form
+            flex-direction: column
+    #collapse-switcher1:checked ~ div
+        height: 800px 
+    #collapse-switcher2:checked ~ div
+        height: 800px
+    #collapse-switcher3:checked ~ div
+        height: 800px
+    #collapse-switcher4:checked ~ div
+        height: 800px
+    #collapse-switcher5:checked ~ div
+        height: 800px
+    #collapse-switcher6:checked ~ div
+        height: 800px
     
     
 @media screen and ( max-width: 575px )
@@ -173,5 +190,16 @@
         &__menu
             grid-column-start: 1
             grid-column-end: 4
+    .form__login 
+        padding-right: 0
+        button
+            margin-right: 10px
+    .newarriv
+        flex-direction: column
+        justify-content: center!important
+    .collapse__block-form 
+        .form__unit 
+            input
+                width: 300px
         
 
