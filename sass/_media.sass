@@ -13,6 +13,10 @@
         margin-top: 20px
         &__gallery
             justify-content: space-evenly
+    .offer
+        &__pic
+            margin-left: -10px
+            margin-right: -10px
 
 @media screen and ( max-width: 991px )
     .container
@@ -48,6 +52,10 @@
         padding-top: 10px
         padding-bottom: 10px
         font-size: 22px
+    .offer__pic
+        background-position: center
+        &-offer
+            margin-top: 300px
     
 
 @media screen and ( max-width: 767px )
@@ -86,6 +94,18 @@
             max-height: 0
     .brand__text
         margin-top: 300px
+    .offer__doby
+        flex-direction: column
+    .offer
+        &__pic
+            width: inherit
+            background-image: cover
+        &__detales
+            margin: 0 auto
+            &-text h3
+                font-size: 25px
+
+    
     
 @media screen and ( max-width: 575px )
     .header__search
