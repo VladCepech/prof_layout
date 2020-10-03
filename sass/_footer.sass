@@ -7,21 +7,23 @@
   background-blend-mode: overlay
   &__box
     display: flex
+    justify-content: space-between
     height: inherit
-
+    padding-top: 123px
 .subscribe__comment
-  min-height: 438px
-  width: 570px
+  max-height: 438px
+  max-width: 570px
   display: flex
-  border-right: 1px solid #ffffff
+  align-items: start
+  // border-right: 1px solid #ffffff
   img
-    margin-top: -110px
-    margin-right: 28px
     object-fit: none
-.comment    
+.comment  
+  padding-left: 28px 
+  p 
+    margin-top: 0 
   .text
-    margin-top: 123px
-    width: 386px
+    max-width: 386px
     font-size: 16px
     line-height: 26px
     letter-spacing: 0.4px
@@ -51,12 +53,12 @@
       background-color: $mainRedColor
 
 .subscribe__mail
-  width: 570px
+  max-width: 570px
   display: flex
   flex-direction: column
   align-items: center
   .title
-    margin-top: 146px
+    margin-top: 0
     margin-bottom: 0
     color: #222224
     font-size: 24px

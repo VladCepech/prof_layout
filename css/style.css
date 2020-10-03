@@ -582,7 +582,7 @@ li {
 
 .offer__detales {
   height: inherit;
-  width: 373px;
+  max-width: 373px;
   padding-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1151,28 +1151,39 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: inherit;
+  padding-top: 123px;
 }
 
 .subscribe__comment {
-  min-height: 438px;
-  width: 570px;
+  max-height: 438px;
+  max-width: 570px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-right: 1px solid #ffffff;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .subscribe__comment img {
-  margin-top: -110px;
-  margin-right: 28px;
   -o-object-fit: none;
      object-fit: none;
 }
 
+.comment {
+  padding-left: 28px;
+}
+
+.comment p {
+  margin-top: 0;
+}
+
 .comment .text {
-  margin-top: 123px;
-  width: 386px;
+  max-width: 386px;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.4px;
@@ -1219,7 +1230,7 @@ li {
 }
 
 .subscribe__mail {
-  width: 570px;
+  max-width: 570px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1233,7 +1244,7 @@ li {
 }
 
 .subscribe__mail .title {
-  margin-top: 146px;
+  margin-top: 0;
   margin-bottom: 0;
   color: #222224;
   font-size: 24px;
@@ -2985,6 +2996,9 @@ li {
     margin-left: -10px;
     margin-right: -10px;
   }
+  .subscribe__box {
+    padding-top: 123px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -3053,6 +3067,25 @@ li {
   }
   .offer__pic-offer {
     margin-top: 300px;
+  }
+  .offer__doby {
+    margin-bottom: 0;
+  }
+  .subscribe__box {
+    padding-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscribe__comment {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -3145,5 +3178,25 @@ li {
   }
   .hot {
     display: none;
+  }
+  .subscribe__comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .subscribe__box {
+    padding-top: 20px;
+  }
+  .subscribe__mail .for {
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
+  .mail_subscribe input {
+    padding-right: 0;
   }
 }
