@@ -68,6 +68,19 @@
         justify-content: center
         margin-bottom: 50px
         // border: none
+    .bottom
+        grid-template-columns: 1fr 1fr 1fr
+        justify-items: center
+        margin-top: 30px
+        &__brand
+            grid-column-start: 1
+            grid-column-end: 4
+            padding-right: 0
+            text-align: center
+        & .header__logo
+            justify-content: center
+        &__menu .bottom__list
+            text-align: center
     
 
 @media screen and ( max-width: 767px )
@@ -126,6 +139,12 @@
             width:  100%
             padding-right: 0
             padding-left: 10px
+    .brand__text-big
+        line-height: 50px
+        color: white
+    .brand__text-small
+        line-height: 38px
+        color: white
     .hot
         display: none
     .subscribe__comment
@@ -141,5 +160,18 @@
     .mail_subscribe 
         input
             padding-right: 0
+    .comment
+        padding-left: 0
+        .bottom-line
+            justify-content: center
+    .footer__body
+        flex-direction: column-reverse
+    .footer__links
+        margin-top: 20px
+    .bottom
+        grid-template-columns: 1fr
+        &__menu
+            grid-column-start: 1
+            grid-column-end: 4
         
 
