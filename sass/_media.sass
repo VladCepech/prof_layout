@@ -19,6 +19,9 @@
             margin-right: -10px
     .subscribe__box
         padding-top: 123px
+    .cart__checkout
+        flex-wrap: wrap
+        justify-content: space-around
 
 @media screen and ( max-width: 991px )
     .container
@@ -147,7 +150,14 @@
         height: 800px
     #collapse-switcher6:checked ~ div
         height: 800px
-    
+    .cart__checkout 
+        .coupon
+            padding-top: 40px
+        .total
+            margin-top: 30px
+    .cart
+        &__top
+            display: none
     
 @media screen and ( max-width: 575px )
     .header__search
@@ -201,5 +211,9 @@
         .form__unit 
             input
                 width: 300px
+    .cart__buttons 
+        a
+            width: 170px
+
         
 
