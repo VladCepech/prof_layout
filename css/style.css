@@ -1476,7 +1476,7 @@ li {
 
 .goods-picture {
   position: relative;
-  height: 777px;
+  max-height: 777px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1488,6 +1488,7 @@ li {
 
 .goods-picture__box {
   width: 1600px;
+  height: 777px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1541,7 +1542,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1141px;
-  height: 730px;
+  max-height: 730px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
 }
@@ -1565,7 +1566,7 @@ li {
   margin-top: 42px;
   margin-bottom: 18px;
   text-align: center;
-  width: 620px;
+  max-width: 620px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -1679,6 +1680,7 @@ li {
   width: 537px;
   height: 55px;
   margin-top: 28px;
+  margin-bottom: 100px;
   background-color: #ffffff;
   border: 1px solid #ef5b70;
   font-size: 16px;
@@ -1731,7 +1733,8 @@ li {
 }
 
 .like-olso {
-  height: 540px;
+  min-height: 500px;
+  padding-bottom: 40px !important;
 }
 
 .like-olso h1 {
@@ -1748,9 +1751,11 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .like-olso__gallery-item {
@@ -3006,6 +3011,10 @@ li {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .goods-picture__box {
+    width: -webkit-fill-available;
+    max-height: 777px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -3121,6 +3130,15 @@ li {
   .form__login {
     padding-right: 20px;
   }
+  .goods-description {
+    margin-top: 0;
+  }
+  .goods-picture__box {
+    height: auto;
+  }
+  .like-olso h1 {
+    margin-top: 90px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -3230,6 +3248,28 @@ li {
   .cart__top {
     display: none;
   }
+  .goods-description h3 {
+    margin-top: 30px;
+  }
+  .goods-description__article {
+    margin-top: 5px;
+  }
+  .goods-description__choose {
+    padding-top: 40px;
+  }
+  .goods-description__price-line {
+    width: 500px;
+  }
+  .goods-description__main-button {
+    margin-bottom: 50px;
+  }
+  .goods-picture__image {
+    width: 80%;
+  }
+  .like-olso h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -3320,5 +3360,38 @@ li {
   }
   .cart__buttons a {
     width: 170px;
+  }
+  .goods-description__price-line {
+    display: none;
+  }
+  .goods-description__choose {
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0;
+  }
+  .goods-description__choose-feature {
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: auto;
+  }
+  .goods-description__choose-feature .input-name {
+    -webkit-box-flex: 16;
+        -ms-flex: 16;
+            flex: 16;
+    margin-right: 20px;
+  }
+  .goods-description__main-button {
+    width: -webkit-fill-available;
   }
 }

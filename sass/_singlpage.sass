@@ -2,12 +2,13 @@
 
 .goods-picture
     position: relative
-    height: 777px
+    max-height: 777px
     display: flex
     justify-content: center
     background-color: #f7f7f7
     &__box
         width: 1600px
+        height: 777px
         display: flex
         justify-content: space-between
         align-items: center
@@ -39,7 +40,7 @@
     flex-direction: column
     align-items: center
     max-width: 1141px
-    height: 730px
+    max-height: 730px
     background-color: #ffffff
     border: 1px solid #eaeaea
     & h3
@@ -57,7 +58,7 @@
         margin-top: 42px
         margin-bottom: 18px
         text-align: center
-        width: 620px
+        max-width: 620px
         font-size: 14px
         line-height: 24px
         font-weight: 300
@@ -132,6 +133,7 @@
         width: 537px
         height: 55px
         margin-top: 28px
+        margin-bottom: 100px
         background-color: #ffffff
         border: 1px solid #ef5b70
         font-size: 16px
@@ -163,7 +165,8 @@
             border-bottom: 3px solid #ef5b70
 
 .like-olso
-    height: 540px
+    min-height: 500px
+    padding-bottom: 40px!important
     & h1
         margin-top: 119px
         margin-bottom: 72px
@@ -174,7 +177,8 @@
         text-align: center
     &__gallery
         display: flex
-        justify-content: space-between
+        flex-wrap: wrap
+        justify-content: space-evenly
         &-item
             width: 263px
             height: 364px
