@@ -61,7 +61,8 @@
             transition: .5s
             &:hover
                 padding-left: 14px
-
+            &:hover a
+                color: $mainRedColor
 .choose__bar
     display: flex
     justify-content: space-between
@@ -93,7 +94,7 @@
             right: 0
             height: 13px
             width: 1px
-            background-color:  #dfdfdf
+            background-color: #dfdfdf
         & a:last-child::after
             display: none
         & a:not(:first-child)
@@ -141,7 +142,7 @@
             position: absolute
             height: 6px
             width: 130px
-            background-color: #f16d7f
+            background-color: $mainRedColor
         &-handle
             position: absolute
             top: -4px
@@ -149,7 +150,7 @@
             border: none
             height: 14px
             width: 14px
-            background-color: #f16d7f
+            background-color: $mainRedColor
             cursor: pointer
         &-value
             display: flex
@@ -237,7 +238,7 @@
         font-size: 16px
         font-weight: 700
         text-transform: uppercase
-        color: #f16d7f
+        color: $mainRedColor
         margin-left: 14px
 
 

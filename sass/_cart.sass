@@ -1,7 +1,7 @@
 @import "_variables.sass"
 
 .newarriv
-    height: 148px
+    min-height: 148px
     background-color: #f8f3f4
     & div
         height: inherit
@@ -30,8 +30,9 @@
         color: $mainRedColor
 
 .cart
-    height: 1123px
+    min-height: 1123px
     font-weight: 400
+    padding-bottom: 20px!important
     & .details
         width: 440px
     & .price
@@ -82,7 +83,7 @@
             color: #575757
             & .name
                 margin-top: 10px
-                color: #222222
+                color: $mainFontColor
                 line-height: 1.2
                 text-transform: uppercase
             & .color
@@ -97,7 +98,7 @@
             height: 30px
             width: 40px
             text-align: center
-            padding-left: 15px
+            padding: 0 8px
             border: 1px solid #eaeaea
     &-del
         border-radius: 50%
@@ -133,13 +134,10 @@
         &:active
             @extend %activeButtonColor 
         
-
 .cart__checkout
     display: flex
     justify-content: space-between
-
-.cart__checkout
-    display: flex
+    flex-wrap: wrap
     & .shipping
         width: 355px
         display: flex
