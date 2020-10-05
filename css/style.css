@@ -3350,8 +3350,51 @@ li {
     line-height: 38px;
     color: white;
   }
-  .hot {
-    display: none;
+  .hot-square {
+    width: 100vw;
+    height: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hot-rectangle {
+    width: 100vw;
+    height: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hot__label {
+    position: initial;
+  }
+  .hot .formen {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .hot .accesories {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+  }
+  .hot .women {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .hot .forkids {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .subscribe__comment {
     -webkit-box-orient: vertical;
