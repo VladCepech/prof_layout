@@ -175,17 +175,25 @@ li {
 
 .search__browse {
   height: inherit;
-  width: inherit;
+  position: relative;
+  z-index: 5;
+  width: 87px;
   font-size: 14px;
   font-weight: 400;
   line-height: 36px;
-  padding-left: 15px;
-  padding-right: 9px;
   background-color: #f8f8f8;
+  background-image: url(../img/caret-down.svg);
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
 }
 
-.search__browse i {
-  margin-left: 8px;
+.search__browse span {
+  display: block;
+  height: inherit;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 9px;
 }
 
 .header__cart {
@@ -2616,25 +2624,6 @@ li {
   max-height: 550px;
   -webkit-transition: .3s;
   transition: .3s;
-}
-
-.search__browse {
-  position: relative;
-  z-index: 5;
-  width: 63px;
-}
-
-.search__browse i {
-  position: absolute;
-  right: 8px;
-  top: 11px;
-  color: #838383;
-}
-
-.search__browse span {
-  display: block;
-  height: inherit;
-  cursor: pointer;
 }
 
 .fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
