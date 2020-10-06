@@ -3072,6 +3072,12 @@ li {
     padding: 0 14px;
     font-size: 20px;
   }
+  .header-line {
+    padding-top: 15px;
+  }
+  .header__cart {
+    margin-top: 0;
+  }
   .search__browse {
     font-size: 22px;
     line-height: 44px;
@@ -3193,25 +3199,27 @@ li {
     padding-left: 20px;
   }
   .header-line {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
   .navbar {
     position: relative;
     min-height: 0;
   }
   .navbar .mobile__menu-open {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    left: 10px;
-    top: -65px;
+    display: none;
+    right: 10px;
+    top: -70px;
+    -webkit-transition: 1.3s;
+    transition: 1.3s;
   }
   .navbar .mobile__menu-close {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     right: 10px;
-    top: -66px;
+    top: -70px;
+    -webkit-transition: 1.3s;
+    transition: 1.3s;
   }
   .navbar__menu-list {
     -webkit-box-orient: vertical;
@@ -3231,6 +3239,16 @@ li {
   }
   .navbar input:checked ~ ul {
     max-height: 0;
+  }
+  .navbar input:checked ~ .mobile__menu-close {
+    display: none;
+    opacity: 0;
+  }
+  .navbar input:checked ~ .mobile__menu-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
   }
   .brand__text {
     margin-top: 300px;

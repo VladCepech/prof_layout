@@ -55,6 +55,10 @@
             button
                 padding: 0 14px
                 font-size: 20px
+        &-line
+            padding-top: 15px
+        &__cart
+            margin-top: 0
     .search__browse
         font-size: 22px
         line-height: 44px
@@ -133,19 +137,20 @@
             padding-right: 0
             padding-left: 20px
     .header-line
-        padding-bottom: 20px
+        padding-bottom: 15px
     .navbar
         position: relative
         min-height: 0
         .mobile__menu-open
-            display: flex
-            left: 10px
-            top: -65px
+            display: none
+            right: 10px
+            top: -70px
+            transition: 1.3s
         .mobile__menu-close
-            // display: none
             display: flex
             right: 10px
-            top: -66px
+            top: -70px
+            transition: 1.3s
         &__menu-list
             flex-direction: column
             align-items: center
@@ -156,6 +161,12 @@
             margin-right: 0!important
         input:checked ~ ul
             max-height: 0
+        input:checked ~ .mobile__menu-close
+            display: none 
+            opacity: 0
+        input:checked ~ .mobile__menu-open
+            display: flex 
+            opacity: 1 
     .brand__text
         margin-top: 300px
     .offer__doby
