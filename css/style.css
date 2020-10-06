@@ -935,12 +935,6 @@ li {
   margin-right: 10px;
 }
 
-.sort__box i {
-  position: absolute;
-  color: #6f6e6e;
-  right: 5px;
-}
-
 .sort__box-title {
   padding-left: 13px;
   padding-right: 8px;
@@ -964,6 +958,10 @@ li {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  background-image: url(../img/caret-down.svg);
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-position: right 6px center;
 }
 
 .show__box {
@@ -1646,12 +1644,20 @@ li {
 }
 
 .goods-description__choose-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
   margin-top: 16px;
   width: 144px;
   height: 35px;
   border: 1px solid #eaeaea;
   padding-left: 30px;
   font-weight: 400;
+  background-image: url(../img/caret-down.svg);
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
 }
 
 .goods-description__choose-color {
@@ -1808,6 +1814,12 @@ li {
   font-weight: 700;
   text-transform: uppercase;
   color: #f16d7f;
+}
+
+.input-number input::-webkit-outer-spin-button,
+.input-number input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
 }
 
 .fetured__gallery-item:hover, .product__gallery-item:hover, .like-olso__gallery-item:hover, .mega__menu-sale a:hover img {
