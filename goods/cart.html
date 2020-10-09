@@ -16,7 +16,33 @@
             <a href="../index.html" class="header__logo"><img src="../img/logo.png" alt="logo" />Bran<span>d</span></a>
             <form method="GET" class="header__search">
                 <div class="search__browse">
-                    Browse<i class="fas fa-caret-down"></i>
+                    <label for="browsemenu"><span>Browse</span></label>
+                </div>
+                <input class="browse__menu-switch" checked type="checkbox" id="browsemenu">
+                <div class="browse__menu-wrapper">
+                    <div class="browse__menu">
+                        <ul class="browse__menu-chapter">
+                            <h4 class="browse__menu-chapter-title">Women</h4>
+                            <li class="browse__menu-item">Dresses</li>
+                            <li class="browse__menu-item">Tops</li>
+                            <li class="browse__menu-item">Sweaters/Knits</li>
+                            <li class="browse__menu-item">Jackets/Coats</li>
+                            <li class="browse__menu-item">Blazers</li>
+                            <li class="browse__menu-item">Denim</li>
+                            <li class="browse__menu-item">Leggings/Pants</li>
+                            <li class="browse__menu-item">Skirts/Shorts</li>
+                            <li class="browse__menu-item">Accessories</li>
+                        </ul>
+                        <ul class="browse__menu-chapter">
+                            <h4 class="browse__menu-chapter-title">Men</h4>
+                            <li class="browse__menu-item">Tees/Tank tops</li>
+                            <li class="browse__menu-item">Shirts/Polos</li>
+                            <li class="browse__menu-item">Sweaters</li>
+                            <li class="browse__menu-item">Sweatsirts/Hoodies</li>
+                            <li class="browse__menu-item">Blazers</li>
+                            <li class="browse__menu-item">Jackets/vests</li>
+                        </ul>
+                    </div>
                 </div>
                 <input type="text" name="search" placeholder="Search for Item..." />
                 <button><i class="fas fa-search"></i></button>
@@ -31,19 +57,71 @@
     <div class="header-line"></div>
 
     <div class="navbar container">
+        <input type="checkbox" checked id="mobile__menu-switch">
+        <label class="mobile__menu-open" for="mobile__menu-switch"><i class="fas fa-bars"></i></label>
+        <label class="mobile__menu-close" for="mobile__menu-switch"><i class="far fa-window-close"></i></label>
+
         <ul class="navbar__menu-list">
             <li class="navbar__menu-item"><a href="../index.html" class="active">Home</a></li>
             <li class="navbar__menu-item"><a href="checkout.html">Man</a></li>
-            <li class="navbar__menu-item" id="active"><a href="single_page.html">Women</a></li>
+            <li class="navbar__menu-item"><label class="mega__menu-label" for="megaswitch">Woman</label></li>
             <li class="navbar__menu-item"><a href="#">Kids</a></li>
             <li class="navbar__menu-item"><a href="product.html">Accoseriese</a></li>
-            <li class="navbar__menu-item"><a href="#">Featured</a></li>
+            <li class="navbar__menu-item"><a href="single_page.html">Featured</a></li>
             <li class="navbar__menu-item"><a href="#">Hot Deals</a></li>
         </ul>
+
+        <div class="mega__menu-wrapper">
+            <input class="mega__switcher" type="checkbox" checked id="megaswitch">
+
+            <div class="mega__menu">
+                <ul class="mega__menu-chapter">
+                    <h4 class="mega__menu-chapter-title">Women</h4>
+                    <li class="mega__menu-item">Dresses</li>
+                    <li class="mega__menu-item">Tops</li>
+                    <li class="mega__menu-item">Sweaters/Knits</li>
+                    <li class="mega__menu-item">Jackets/Coats</li>
+                    <li class="mega__menu-item">Blazers</li>
+                    <li class="mega__menu-item">Denim</li>
+                    <li class="mega__menu-item">Leggings/Pants</li>
+                    <li class="mega__menu-item">Skirts/Shorts</li>
+                    <li class="mega__menu-item">Accessories</li>
+                </ul>
+                <ul class="mega__menu-chapter">
+                    <h4 class="mega__menu-chapter-title">Women</h4>
+                    <li class="mega__menu-item">Tees/Tank tops</li>
+                    <li class="mega__menu-item">Shirts/Polos</li>
+                    <li class="mega__menu-item">Sweaters</li>
+                    <li class="mega__menu-item">Sweatsirts/Hoodies</li>
+                </ul>
+                <ul class="mega__menu-chapter">
+                    <h4 class="mega__menu-chapter-title">Women</h4>
+                    <li class="mega__menu-item">Tees/Tank tops</li>
+                    <li class="mega__menu-item">Shirts/Polos</li>
+                    <li class="mega__menu-item">Sweaters</li>
+                </ul>
+                <ul class="mega__menu-chapter">
+                    <h4 class="mega__menu-chapter-title">Women</h4>
+                    <li class="mega__menu-item">Tees/Tank tops</li>
+                    <li class="mega__menu-item">Shirts/Polos</li>
+                    <li class="mega__menu-item">Sweaters</li>
+                    <li class="mega__menu-item">Sweatsirts/Hoodies</li>
+                </ul>
+                <div class="mega__menu-sale">
+                    <a href="#"><img src="../img/Promo Ad.png" alt=""></a>
+                    <div class="mega__menu-sale-text">
+                        <span>Super</span>
+                        <span>sale!</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
     <div class="newarriv">
-        <div class="container">
+        <div class="newarriv container">
             <div class="newarriv__main">New Arrivals</div>
             <div class="newarriv__nav">
                 <a href="../index.html">Home /</a>
@@ -145,6 +223,7 @@
                     <input id="state" type="text" placeholder="State">
                     <input id="zip" type="text" placeholder="Postcode / Zip">
                 </form>
+                <button class="cart__quote">get a quote</button>
             </div>
             <div class="coupon">
                 <span>coupon discount</span>
@@ -167,7 +246,7 @@
         </div>
 
 
-        <button class="cart__quote">get a quote</button>
+
 
     </div>
 

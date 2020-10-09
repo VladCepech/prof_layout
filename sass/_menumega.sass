@@ -1,0 +1,102 @@
+@import "_variables.sass"
+
+
+.mega__switcher
+    position: absolute
+    z-index: 10
+    top: -999px
+    right: 25px
+    visibility: hidden
+    &:checked + div
+        top: -440px
+        opacity: 0
+.mega__menu
+    position: absolute
+    top: 40px
+    right: -230px
+    opacity: 1
+    z-index: 5
+    transition: .8s
+    width: fit-content
+    padding: 18px 18px 0 18px
+    border-radius: 3px
+    border: 1px solid #e6e6e6
+    background-color: #ffffff
+    column-count: 3
+    &-wrapper
+        position: relative
+    &-chapter
+        margin: 0
+        padding: 0 0 18px 0
+        color: #222222
+        font-size: 14px
+        font-weight: 700
+        -webkit-column-break-inside: avoid
+        &-title
+            border-bottom: 1px solid #e6e6e6
+            margin: 0
+            margin-bottom: 10px
+            padding-bottom: 5px
+            text-transform: uppercase
+    &-item
+        text-decoration: none
+        list-style-type: none
+        margin-left: 5px
+        cursor: pointer
+        transition: .3s
+        &:hover
+            margin-left: 15px
+            color: $mainRedColor
+    &-item:not(:last-child)
+        margin-bottom: 12px
+    &-switch
+        position: absolute
+        z-index: 10
+        left: -999px
+        visibility: hidden
+        &:checked + div
+            max-height: 0
+            z-index: 4
+            // padding: 0
+        &:checked + div > div::after div::after
+            opacity: 0
+    &::before
+        content: ''
+        position: absolute
+        top: -6px
+        left: 39px
+        height: 10px
+        width: 10px
+        transform: rotate(45deg)
+        background-color: #fff 
+        border-left: 1px solid #e6e6e6        
+        border-top: 1px solid #e6e6e6 
+    &-sale
+        position: relative
+        img
+            transition: .2s
+        a:hover img
+            @extend %hoverShadow
+            opacity: 0.9
+        a:hover + div
+            color: $mainRedColor
+        &-text
+            position: absolute
+            bottom: 10px
+            right: 10px
+            display: flex
+            flex-direction: column
+            text-transform: uppercase
+            color: #fff
+            font-size: 18px
+            font-weight: 700
+            letter-spacing: 0.05em
+            transition: .2s
+    &-label
+        display: inline-block
+        width: inherit
+        cursor: pointer
+        opacity: 
+        transition: .2s
+        &:hover
+            color: $mainRedColor

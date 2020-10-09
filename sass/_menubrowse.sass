@@ -1,0 +1,64 @@
+@import "_variables.sass"
+
+.browse__menu
+    position: relative
+    z-index: 5
+    width: 254px
+    border-radius: 3px
+    border: 1px solid #e6e6e6
+    background-color: #ffffff
+    &-chapter
+        padding: 14px
+        margin: 0
+        color: $mainFontColor
+        font-size: 14px
+        font-weight: 700
+        &-title
+            border-bottom: 1px solid #e6e6e6
+            margin: 0
+            margin-bottom: 10px
+            padding-bottom: 5px
+            text-transform: uppercase
+    &-item
+        text-decoration: none
+        list-style-type: none
+        margin-left: 5px
+        cursor: pointer
+        transition: .3s
+        &:hover
+            margin-left: 15px
+            color: $mainRedColor
+    &-item:not(:last-child)
+        margin-bottom: 12px
+    &-switch
+        position: absolute
+        z-index: 10
+        left: -999px
+        visibility: hidden
+        &:checked + div
+            max-height: 0
+            z-index: 4
+            // padding: 0
+        &:checked + div > div::before
+            opacity: 0
+    &::before
+        content: ''
+        position: absolute
+        top: -6px
+        left: 39px
+        height: 10px
+        width: 10px
+        transform: rotate(45deg)
+        background-color: #fff 
+        border-left: 1px solid #e6e6e6        
+        border-top: 1px solid #e6e6e6 
+        transition: .2s
+    &-wrapper
+        // z-index: 2
+        padding-top: 8px
+        position: absolute
+        overflow: hidden
+        top: 61px
+        max-height: 660px
+        transition: .3s
+
