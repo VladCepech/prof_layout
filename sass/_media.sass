@@ -160,15 +160,17 @@
         position: relative
         min-height: 0
         .mobile__menu-open
-            display: none
+            display: flex
+            opacity: 0
             right: 10px
             top: -70px
-            transition: 1.3s
+            transition: .3s
         .mobile__menu-close
             display: flex
+            opacity: 1
             right: 10px
             top: -70px
-            transition: 1.3s
+            transition: .3s
         &__menu-list
             flex-direction: column
             align-items: center
@@ -180,7 +182,7 @@
         input:checked ~ ul
             max-height: 0
         input:checked ~ .mobile__menu-close
-            display: none 
+            display: flex
             opacity: 0
         input:checked ~ .mobile__menu-open
             display: flex 
