@@ -1,8 +1,8 @@
 @media screen and ( max-width: 1199px )
     .container
         padding: 0 10px
-    .mega__menu-wrapper
-        display: none
+    .mega__menu
+        right: -70px
     .hot
         height: fit-content
         align-content: center
@@ -38,6 +38,8 @@
 @media screen and ( max-width: 991px )
     .container
         padding: 0 10px
+    .mega__menu-wrapper
+        display: none
     .header
         padding-top: 10px
         flex-direction: column
@@ -133,6 +135,14 @@
             font-size: 16px
         &-item
             font-size: 16px
+
+    .cart__switcher
+        &:checked + div
+            top: -580px
+            opacity: 0
+    .cart__menu
+        top: 48px
+        right: 0
 
 @media screen and ( max-width: 767px )
     .header__left
@@ -354,3 +364,12 @@
             font-size: 18px
         &-item
             font-size: 17px
+
+    .cart__switcher
+        &:checked + div
+            top: 48px
+            left: -380px
+            opacity: 0
+    .cart__menu
+        // top: 48px
+        left: -26px
