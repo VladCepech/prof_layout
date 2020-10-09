@@ -2633,7 +2633,7 @@ li {
   position: absolute;
   overflow: hidden;
   top: 61px;
-  max-height: 550px;
+  max-height: 660px;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -3182,6 +3182,15 @@ li {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .browse__menu-wrapper {
+    top: 127px;
+  }
+  .browse__menu-chapter {
+    font-size: 16px;
+  }
+  .browse__menu-item {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -3531,5 +3540,14 @@ li {
   }
   .viewtype__page {
     margin-bottom: 20px;
+  }
+  .browse__menu {
+    width: 354px;
+  }
+  .browse__menu-chapter {
+    font-size: 18px;
+  }
+  .browse__menu-item {
+    font-size: 17px;
   }
 }
