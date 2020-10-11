@@ -172,6 +172,7 @@
             top: -70px
             transition: .3s
         &__menu-list
+            padding: 0
             flex-direction: column
             align-items: center
             max-height: 400px
@@ -189,9 +190,9 @@
             opacity: 1 
     .brand__text
         margin-top: 300px
-    .offer__doby
-        flex-direction: column
     .offer
+        &__doby
+            flex-direction: column
         &__pic
             width: inherit
             background-image: cover
@@ -332,6 +333,31 @@
         .form__unit
             input
                 width: 300px
+    .cart__item
+        justify-content: center
+        flex-wrap: wrap
+        font-size: 17px
+        .details
+            width: 480px
+            margin-bottom: 10px
+        .price
+            width: 80px
+        .shipping
+            order: 1
+        .action
+            order: 1
+            width: 275px
+            height: 35px
+            margin-top: 12px
+        &-del
+            height: inherit
+            width: 100px
+            border-radius: 4px
+            background-color: $mainRedColor
+    .cart-table
+        i
+            font-size: 20px
+            color: #fff
     .cart__buttons
         a
             width: 170px
@@ -373,5 +399,4 @@
             left: -380px
             opacity: 0
     .cart__menu
-        // top: 48px
         left: -26px
