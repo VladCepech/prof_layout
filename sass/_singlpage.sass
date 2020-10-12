@@ -2,13 +2,13 @@
 
 .goods-picture
     position: relative
-    z-index: 1
-    height: 777px
+    max-height: 777px
     display: flex
     justify-content: center
     background-color: #f7f7f7
     &__box
         width: 1600px
+        height: 777px
         display: flex
         justify-content: space-between
         align-items: center
@@ -39,8 +39,8 @@
     display: flex
     flex-direction: column
     align-items: center
-    width: 1141px
-    height: 730px
+    max-width: 1141px
+    max-height: 730px
     background-color: #ffffff
     border: 1px solid #eaeaea
     & h3
@@ -58,7 +58,7 @@
         margin-top: 42px
         margin-bottom: 18px
         text-align: center
-        width: 620px
+        max-width: 620px
         font-size: 14px
         line-height: 24px
         font-weight: 300
@@ -104,19 +104,24 @@
                 color: #2f2f2f
                 width: 112px
         &-input
+            appearance: none
+            cursor: pointer
             margin-top: 16px
             width: 144px
             height: 35px
             border: 1px solid #eaeaea
             padding-left: 30px
             font-weight: 400
+            background-image: url(../img/caret-down.svg)
+            background-size: 14px
+            background-repeat: no-repeat
+            background-position: right 8px center
         &-color
             position: relative
             &::before
                 content: ''
                 width: 12px
                 height: 12px
-                // font-family: "Font Awesome 5 Brands"
                 background-color: $mainRedColor
                 position: absolute
                 bottom: 12px
@@ -133,6 +138,7 @@
         width: 537px
         height: 55px
         margin-top: 28px
+        margin-bottom: 100px
         background-color: #ffffff
         border: 1px solid #ef5b70
         font-size: 16px
@@ -164,7 +170,8 @@
             border-bottom: 3px solid #ef5b70
 
 .like-olso
-    height: 540px
+    min-height: 500px
+    padding-bottom: 40px!important
     & h1
         margin-top: 119px
         margin-bottom: 72px
@@ -175,7 +182,8 @@
         text-align: center
     &__gallery
         display: flex
-        justify-content: space-between
+        flex-wrap: wrap
+        justify-content: space-evenly
         &-item
             width: 263px
             height: 364px
@@ -204,3 +212,10 @@
                 font-weight: 700
                 text-transform: uppercase
                 color: $mainRedColor
+
+.input-number
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button
+        -webkit-appearance: none
+        -moz-appearance: textfield
+
