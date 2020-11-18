@@ -7,21 +7,23 @@
   background-blend-mode: overlay
   &__box
     display: flex
+    justify-content: space-between
     height: inherit
-
+    padding-top: 123px
 .subscribe__comment
-  min-height: 438px
-  width: 570px
+  max-height: 438px
+  max-width: 570px
   display: flex
-  border-right: 1px solid #ffffff
+  align-items: start
+  // border-right: 1px solid #ffffff
   img
-    margin-top: -110px
-    margin-right: 28px
     object-fit: none
-.comment    
+.comment  
+  padding-left: 28px 
+  p 
+    margin-top: 0 
   .text
-    margin-top: 123px
-    width: 386px
+    max-width: 386px
     font-size: 16px
     line-height: 26px
     letter-spacing: 0.4px
@@ -42,21 +44,21 @@
     display: flex
     justify-content: start
     .line-element
-        width: 38px
-        height: 4px
-        margin-right: 13px
+      width: 38px
+      height: 4px
+      margin-right: 13px
     .grey
-        background-color: #d6d6d6
+      background-color: #d6d6d6
     .red
-        background-color: $mainRedColor
+      background-color: $mainRedColor
 
 .subscribe__mail
-  width: 570px
+  max-width: 570px
   display: flex
   flex-direction: column
   align-items: center
   .title
-    margin-top: 146px
+    margin-top: 0
     margin-bottom: 0
     color: #222224
     font-size: 24px
@@ -83,10 +85,10 @@
     padding-right: 78px
     background-color: #e1e1e1
     &::placeholder
-        color: #a4a4a4
-        font-size: 14px
-        font-weight: 300
-        letter-spacing: 0.35px
+      color: #a4a4a4
+      font-size: 14px
+      font-weight: 300
+      letter-spacing: 0.35px
   a
     font-size: 14px
     line-height: 46px
@@ -99,7 +101,7 @@
     background-color: $mainRedColor
     transition: .2s
     &:hover
-        background-color: $mainRedHover
+      background-color: $mainRedHover
 
 .bottom
   min-height: 338px
@@ -107,13 +109,15 @@
   display: grid
   grid-template-columns: 2.3fr 1fr 1fr 1fr
   &-text
-    width: 427px
+    max-width: 427px
     color: #898989
     font-size: 14px
     font-weight: 300
     line-height: 24px
     letter-spacing: 0.35px
 
+.bottom__brand
+  padding-right: 10px
 .bottom__menu
   display: flex
   flex-direction: column
@@ -126,15 +130,15 @@
   .bottom__list
     padding-left: 0
     .bottom__item
-        margin-bottom: 18px
-        a
-            color: #898989
-            font-size: 16px
-            font-weight: 400
-            letter-spacing: 0.4px
-            transition: .2s
-            &:hover
-                color: #f16d7f
+      margin-bottom: 18px
+      a
+        color: #898989
+        font-size: 16px
+        font-weight: 400
+        letter-spacing: 0.4px
+        transition: .2s
+        &:hover
+          color: $mainRedColor
 
 .footer
   min-height: 79px
@@ -169,13 +173,6 @@
       transform: scale(1.1)
     &:active
       @extend %activeButtonColor  
-
-
- 
-
-
-
-  
 
 
 

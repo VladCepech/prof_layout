@@ -1,0 +1,401 @@
+@media screen and ( max-width: 1199px )
+    .container
+        padding: 0 10px
+    .mega__menu
+        right: -70px
+    .hot
+        height: fit-content
+        align-content: center
+        margin-top: 0
+        & a
+            margin-top: 20px
+    .fetured
+        margin-top: 20px
+        &__gallery
+            justify-content: space-evenly
+    .offer
+        &__pic
+            margin-left: -10px
+            margin-right: -10px
+    .subscribe__box
+        padding-top: 123px
+    .cart__checkout
+        flex-wrap: wrap
+        justify-content: space-around
+    .goods-picture
+        &__box
+            width: -webkit-fill-available
+            max-height: 777px
+    .product
+        padding-top: 20px!important
+        padding-bottom: 20px!important
+    .sidebar
+        min-width: 170px
+        padding-right: 10px
+    .information
+        padding-top: 69px!important
+
+@media screen and ( max-width: 991px )
+    .container
+        padding: 0 10px
+    .mega__menu-wrapper
+        display: none
+    .header
+        padding-top: 10px
+        flex-direction: column
+        align-items: center
+        &__left
+            flex-direction: column
+        &__search
+            margin: 20px 0
+            height: 52px
+            input
+                padding-right: 150px
+                padding-left: 24px
+                &::placeholder
+                    font-size: 22px
+            button
+                padding: 0 14px
+                font-size: 20px
+        &-line
+            padding-top: 15px
+        &__cart
+            margin-top: 0
+    .search__browse
+        font-size: 22px
+        line-height: 44px
+        padding-left: 20px
+        padding-right: 40px
+    .navbar__menu-item
+        &:not(:last-child)
+            margin-right: 22px
+    .fetured__name p
+        margin-bottom: 40px
+    .fetured__button-browse
+        padding-top: 10px
+        padding-bottom: 10px
+        font-size: 22px
+    .offer__pic
+        background-position: center
+        &-offer
+            margin-top: 300px
+    .offer__doby
+        margin-bottom: 0
+    .subscribe__box
+        padding-top: 50px
+        flex-direction: column
+        align-items: center
+    .subscribe__comment
+        justify-content: center
+        margin-bottom: 50px
+    .bottom
+        grid-template-columns: 1fr 1fr 1fr
+        justify-items: center
+        margin-top: 30px
+        &__brand
+            grid-column-start: 1
+            grid-column-end: 4
+            padding-right: 0
+            text-align: center
+        & .header__logo
+            justify-content: center
+        &__menu .bottom__list
+            text-align: center
+    .newarriv
+        min-height: 80px
+    .form__login
+        padding-right: 20px
+    .goods-description
+        margin-top: 0
+    .goods-picture__box
+        height: auto
+    .like-olso
+        h1
+            margin-top: 90px
+    .sidebar
+        min-width: 210px
+    .choose__bar
+        flex-wrap: wrap
+        justify-content: space-evenly
+    .choose__trendind
+        margin-bottom: 20px
+    .choose__size
+        margin-bottom: 20px
+    .product__gallery
+        justify-content: space-evenly
+    .information__item-text
+        padding-left: 10px
+        padding-right: 10px
+
+    .browse__menu
+        &-wrapper
+            top: 127px
+        &-chapter
+            font-size: 16px
+        &-item
+            font-size: 16px
+
+    .cart__switcher
+        &:checked + div
+            top: -580px
+            opacity: 0
+    .cart__menu
+        top: 48px
+        right: 0
+
+@media screen and ( max-width: 767px )
+    .header__left
+        width: 100%
+    .header__search
+        width: inherit
+        justify-content: space-between
+        input
+            width: 100%
+            padding-right: 0
+            padding-left: 20px
+    .header-line
+        padding-bottom: 15px
+    .navbar
+        position: relative
+        min-height: 0
+        .mobile__menu-open
+            display: flex
+            opacity: 0
+            right: 10px
+            top: -70px
+            transition: .3s
+        .mobile__menu-close
+            display: flex
+            opacity: 1
+            right: 10px
+            top: -70px
+            transition: .3s
+        &__menu-list
+            padding: 0
+            flex-direction: column
+            align-items: center
+            max-height: 400px
+            overflow: hidden
+            transition: .3s
+        &__menu-item
+            margin-right: 0!important
+        input:checked ~ ul
+            max-height: 0
+        input:checked ~ .mobile__menu-close
+            display: flex
+            opacity: 0
+        input:checked ~ .mobile__menu-open
+            display: flex
+            opacity: 1
+    .brand__text
+        margin-top: 300px
+    .offer
+        &__doby
+            flex-direction: column
+        &__pic
+            width: inherit
+            background-image: cover
+        &__detales
+            margin: 0 auto
+            &-text h3
+                font-size: 25px
+    .collapse__block
+        &-form
+            flex-direction: column
+    #collapse-switcher1:checked ~ div
+        height: 800px
+    #collapse-switcher2:checked ~ div
+        height: 800px
+    #collapse-switcher3:checked ~ div
+        height: 800px
+    #collapse-switcher4:checked ~ div
+        height: 800px
+    #collapse-switcher5:checked ~ div
+        height: 800px
+    #collapse-switcher6:checked ~ div
+        height: 800px
+    .cart__checkout
+        .coupon
+            padding-top: 40px
+        .total
+            margin-top: 30px
+    .cart
+        &__top
+            display: none
+    .goods-description
+        h3
+            margin-top: 30px
+        &__article
+            margin-top: 5px
+        &__choose
+            padding-top: 40px
+        &__price-line
+            width: 500px
+        &__main-button
+            margin-bottom: 50px
+    .goods-picture__image
+        width: 80%
+    .like-olso
+        h1
+            margin-top: 50px
+            margin-bottom: 50px
+    .product
+        flex-direction: column
+    .sidebar
+        width: -webkit-fill-available
+        &__menu-item
+            text-align: center
+            li
+                font-size: 18px
+    .info__box
+        height: auto
+    .information
+        flex-wrap: wrap
+        padding-top: 20px!important
+
+@media screen and ( max-width: 575px )
+    .header__search
+        justify-content: space-between
+        input
+            width: 100%
+            padding-right: 0
+            padding-left: 10px
+    .brand__text-big
+        line-height: 50px
+        color: white
+    .brand__text-small
+        line-height: 38px
+        color: white
+    .hot
+        // display: none
+        &-square
+            width: 100vw
+            height: 160px
+            display: flex
+            justify-content: center
+            align-items: center
+        &-rectangle
+            width: 100vw
+            height: 160px
+            display: flex
+            justify-content: center
+            align-items: center
+        &__label
+            position: initial
+        .formen
+            background-blend-mode: multiply
+            background-color: rgba(0, 0, 0, 0.3)
+        .accesories
+            background-blend-mode: multiply
+            background-color: rgba(0, 0, 0, 0.3)
+            background-size: cover
+        .women
+            background-blend-mode: multiply
+            background-color: rgba(0, 0, 0, 0.3)
+        .forkids
+            background-blend-mode: multiply
+            background-color: rgba(0, 0, 0, 0.3)
+    .subscribe__comment
+        flex-direction: column
+        align-items: center
+        margin-bottom: 20px
+    .subscribe__box
+        padding-top: 20px
+    .subscribe__mail
+        & .for
+            margin-top: 3px
+            margin-bottom: 10px
+    .mail_subscribe
+        input
+            padding-right: 0
+    .comment
+        padding-left: 0
+        .bottom-line
+            justify-content: center
+    .footer__body
+        flex-direction: column-reverse
+    .footer__links
+        margin-top: 20px
+    .bottom
+        grid-template-columns: 1fr
+        &__menu
+            grid-column-start: 1
+            grid-column-end: 4
+    .form__login
+        padding-right: 0
+        button
+            margin-right: 10px
+    .newarriv
+        flex-direction: column
+        justify-content: center!important
+    .collapse__block-form
+        .form__unit
+            input
+                width: 300px
+    .cart__item
+        justify-content: center
+        flex-wrap: wrap
+        font-size: 17px
+        .details
+            width: 480px
+            margin-bottom: 10px
+        .price
+            width: 80px
+        .shipping
+            order: 1
+        .action
+            order: 1
+            width: 275px
+            height: 35px
+            margin-top: 12px
+        &-del
+            height: inherit
+            width: 100px
+            border-radius: 4px
+            background-color: $mainRedColor
+    .cart-table
+        i
+            font-size: 20px
+            color: #fff
+    .cart__buttons
+        a
+            width: 170px
+    .goods-description__price-line
+        display: none
+    .goods-description__choose
+        width: auto
+        flex-direction: column
+        align-items: center
+        padding-top: 0
+        &-feature
+            margin-bottom: 20px
+            display: flex
+            align-items: baseline
+            width: auto
+            .input-name
+                flex: 16
+                margin-right: 20px
+    .goods-description__main-button
+        width: -webkit-fill-available
+    .sort__bar
+        justify-content: space-between
+    .viewtype__bar
+        flex-direction: column
+        align-items: center
+    .viewtype__page
+        margin-bottom: 20px
+
+    .browse__menu
+        width: 354px
+        &-chapter
+            font-size: 18px
+        &-item
+            font-size: 17px
+
+    .cart__switcher
+        &:checked + div
+            top: 48px
+            left: -380px
+            opacity: 0
+    .cart__menu
+        left: -26px
